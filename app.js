@@ -10470,10 +10470,13 @@ let state = {
         active: false,
         questions: [],
         currentIndex: 0,
+        currentSection: 0,
         userAnswers: {},
         timeRemaining: 7200,
         timerInterval: null,
-        targetUniv: 'TU'
+        targetUniv: 'TU',
+        examFormat: 'TU',
+        sections: []
     }
 };
 
@@ -10655,13 +10658,19 @@ function switchView(viewName) {
 }
 
 // --- 8. ADMIN MODE TOGGLE SYSTEM ---
+const ADMIN_PASSCODE = "Rijan@123";
+
 function initAdminModule() {
     const adminToggleBtn = document.getElementById('adminToggleBtn');
     if (adminToggleBtn) {
         adminToggleBtn.addEventListener('click', () => {
-            state.isAdmin = !state.isAdmin;
-            updateAdminUI();
-            showToast(state.isAdmin ? "Switched to Admin Mode" : "Switched to Student View", state.isAdmin ? "success" : "info");
+            if (state.isAdmin) {
+                state.isAdmin = false;
+                updateAdminUI();
+                showToast("Switched to Student View", "info");
+            } else {
+                openAdminLoginModal();
+            }
         });
     }
 
@@ -10673,6 +10682,49 @@ function initAdminModule() {
     if (closeModalBtn) closeModalBtn.addEventListener('click', closeAdminQModal);
     if (saveQBtn) saveQBtn.addEventListener('click', saveAdminQuestionForm);
     document.getElementById('adminAddQBtn')?.addEventListener('click', () => openAdminQModal());
+
+    document.getElementById('cancelAdminLoginBtn')?.addEventListener('click', closeAdminLoginModal);
+    document.getElementById('closeAdminLoginModal')?.addEventListener('click', closeAdminLoginModal);
+    document.getElementById('submitAdminLoginBtn')?.addEventListener('click', submitAdminLogin);
+    document.getElementById('adminPasscodeInput')?.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') submitAdminLogin();
+    });
+}
+
+function openAdminLoginModal() {
+    const modal = document.getElementById('adminLoginModal');
+    const input = document.getElementById('adminPasscodeInput');
+    if (modal) modal.classList.remove('hidden');
+    if (input) {
+        input.value = '';
+        input.classList.remove('is-invalid');
+        setTimeout(() => input.focus(), 50);
+    }
+}
+
+function closeAdminLoginModal() {
+    const modal = document.getElementById('adminLoginModal');
+    if (modal) modal.classList.add('hidden');
+    const input = document.getElementById('adminPasscodeInput');
+    if (input) input.classList.remove('is-invalid');
+}
+
+function submitAdminLogin() {
+    const input = document.getElementById('adminPasscodeInput');
+    const entered = input ? input.value.trim() : '';
+
+    if (entered === ADMIN_PASSCODE) {
+        closeAdminLoginModal();
+        state.isAdmin = true;
+        updateAdminUI();
+        showToast("Admin Mode Unlocked", "success");
+    } else {
+        showToast("Incorrect admin passcode. Access denied.", "error");
+        if (input) {
+            input.classList.add('is-invalid');
+            input.select();
+        }
+    }
 }
 
 function updateAdminUI() {
@@ -11096,6 +11148,126 @@ function handleOptionClick(optIndex, question, btnElement) {
 }
 
 // --- 11. UNIVERSITY MOCK EXAM ENGINE ---
+const EXAM_FORMATS = {
+    TU: {
+        name: "Tribhuvan University (TU) BCA Entrance",
+        duration: 7200,
+        passPercent: 40,
+        sections: [
+            { key: "Mathematics", label: "Section A - Mathematics", count: 40 },
+            { key: "English", label: "Section B - English", count: 40 },
+            { key: "Computer & IT", label: "Section C - Computer & IT", count: 20 }
+        ]
+    },
+    KU: {
+        name: "Kathmandu University (KU) - KUCAT Pattern",
+        duration: 2400,
+        passPercent: 50,
+        sections: [
+            { key: "English", label: "Section A - Verbal Ability", count: 10 },
+            { key: "Mathematics", label: "Section B - Numerical Ability", count: 10 },
+            { key: "Computer & IT", label: "Section C - Computer Aptitude", count: 10 },
+            { key: "Logical Reasoning & GK", label: "Section D - Logical Reasoning", count: 6 }
+        ]
+    },
+    PU: {
+        name: "Pokhara University (PU) BCA Entrance",
+        duration: 7200,
+        passPercent: 40,
+        sections: [
+            { key: "Mathematics", label: "Section A - Mathematics", count: 40 },
+            { key: "English", label: "Section B - English", count: 40 },
+            { key: "Computer & IT", label: "Section C - Computer & IT", count: 20 }
+        ]
+    },
+    Purbanchal: {
+        name: "Purbanchal University BCA Entrance",
+        duration: 7200,
+        passPercent: 40,
+        sections: [
+            { key: "Mathematics", label: "Section A - Mathematics", count: 40 },
+            { key: "English", label: "Section B - English", count: 40 },
+            { key: "Computer & IT", label: "Section C - Computer & IT", count: 20 }
+        ]
+    },
+    All: {
+        name: "General Combined Nepal University Mock Test",
+        duration: 7200,
+        passPercent: 40,
+        sections: [
+            { key: "Mathematics", label: "Section A - Mathematics", count: 40 },
+            { key: "English", label: "Section B - English", count: 40 },
+            { key: "Computer & IT", label: "Section C - Computer & IT", count: 20 }
+        ]
+    }
+};
+
+function formatExamDuration(seconds) {
+    const h = Math.floor(seconds / 3600);
+    const m = Math.round((seconds % 3600) / 60);
+    if (h > 0 && m > 0) return `${h} Hr ${m} Min`;
+    if (h > 0) return `${h} Hr`;
+    return `${m} Min`;
+}
+
+function getSelectedExamFormat() {
+    const key = document.getElementById('mockUnivTargetSelect')?.value || 'TU';
+    return { key, ...EXAM_FORMATS[key] };
+}
+
+function updateMockFormatInfo() {
+    const fmt = getSelectedExamFormat();
+    const structure = document.getElementById('examStructureInfo');
+    const summary = document.getElementById('examSummaryInfo');
+    if (!structure && !summary) return;
+
+    const totalQs = fmt.sections.reduce((sum, s) => sum + s.count, 0);
+
+    if (summary) {
+        summary.innerHTML = `
+            <span class="es-chip"><i class="fa-solid fa-graduation-cap"></i> ${escapeHtml(fmt.name)}</span>
+            <span class="es-chip"><i class="fa-solid fa-list-ol"></i> ${totalQs} Questions</span>
+            <span class="es-chip"><i class="fa-solid fa-clock"></i> ${formatExamDuration(fmt.duration)}</span>
+            <span class="es-chip"><i class="fa-solid fa-check-circle"></i> Pass Mark: ${fmt.passPercent}%</span>
+            <span class="es-chip"><i class="fa-solid fa-circle-xmark"></i> Negative Marking: None</span>
+        `;
+    }
+
+    if (structure) {
+        structure.innerHTML = '';
+        fmt.sections.forEach(s => {
+            const box = document.createElement('div');
+            box.className = 'struct-box';
+            const shortLabel = s.label.replace('Section ', '').replace(' - ', ' | ');
+            box.innerHTML = `<span class="num">${s.count}</span><span class="lbl">${escapeHtml(shortLabel)}</span>`;
+            structure.appendChild(box);
+        });
+    }
+}
+
+function buildMockExam(fmt) {
+    const sections = [];
+    const questions = [];
+
+    fmt.sections.forEach(section => {
+        const start = questions.length;
+        const pool = shuffleArray(state.questions.filter(q =>
+            (q.subject || '').trim().toLowerCase() === section.key.trim().toLowerCase()
+        ));
+        const picked = pool.slice(0, section.count);
+        picked.forEach(q => questions.push(q));
+        sections.push({
+            key: section.key,
+            label: section.label,
+            start,
+            end: questions.length,
+            count: questions.length - start
+        });
+    });
+
+    return { sections, questions };
+}
+
 function initMockExamMode() {
     const startBtn = document.getElementById('startFullMockExamBtn');
     const submitBtn = document.getElementById('submitExamEarlyBtn');
@@ -11107,12 +11279,23 @@ function initMockExamMode() {
         retakeBtn.addEventListener('click', () => {
             document.getElementById('mockResultCard').classList.add('hidden');
             document.getElementById('mockWelcomeCard').classList.remove('hidden');
+            const review = document.getElementById('mockReviewContainer');
+            if (review) review.classList.add('hidden');
         });
     }
+
+    document.getElementById('mockUnivTargetSelect')?.addEventListener('change', updateMockFormatInfo);
+    updateMockFormatInfo();
+
+    document.getElementById('reviewAnswersBtn')?.addEventListener('click', () => {
+        const container = document.getElementById('mockReviewContainer');
+        if (container) container.classList.toggle('hidden');
+    });
 
     document.getElementById('mockPrevBtn')?.addEventListener('click', () => {
         if (state.mock.currentIndex > 0) {
             state.mock.currentIndex--;
+            syncMockSectionFromIndex();
             renderMockQuestion();
         }
     });
@@ -11120,42 +11303,40 @@ function initMockExamMode() {
     document.getElementById('mockNextBtn')?.addEventListener('click', () => {
         if (state.mock.currentIndex < state.mock.questions.length - 1) {
             state.mock.currentIndex++;
+            syncMockSectionFromIndex();
             renderMockQuestion();
         }
     });
 }
 
+function syncMockSectionFromIndex() {
+    const idx = state.mock.currentIndex;
+    const secIdx = state.mock.sections.findIndex(s => idx >= s.start && idx < s.end);
+    if (secIdx >= 0) state.mock.currentSection = secIdx;
+}
+
 function startMockExam() {
-    const targetUniv = document.getElementById('mockUnivTargetSelect').value;
-    state.mock.targetUniv = targetUniv;
+    const fmt = getSelectedExamFormat();
+    state.mock.examFormat = fmt.key;
+    state.mock.targetUniv = fmt.key;
     state.mock.active = true;
 
-    let pool = [];
-    if (targetUniv === 'All') {
-        pool = [...state.questions];
-    } else {
-        const univQ = state.questions.filter(q => (q.univ || 'TU').toUpperCase() === targetUniv.toUpperCase());
-        pool = univQ.length > 0 ? univQ : [...state.questions];
-    }
-
-    // Always shuffle mock exam questions for fresh test sessions
-    state.mock.questions = shuffleArray(pool);
-    state.mock.currentIndex = 0;
+    const built = buildMockExam(fmt);
+    state.mock.questions = built.questions;
+    state.mock.sections = built.sections;
+    state.mock.currentSection = 0;
+    state.mock.currentIndex = built.sections.length > 0 ? built.sections[0].start : 0;
     state.mock.userAnswers = {};
-
-    if (targetUniv === 'KU') {
-        state.mock.timeRemaining = 5400; // 1.5 Hours
-    } else {
-        state.mock.timeRemaining = 7200; // 2 Hours
-    }
+    state.mock.timeRemaining = fmt.duration;
 
     document.getElementById('mockWelcomeCard').classList.add('hidden');
     document.getElementById('mockActiveLayout').classList.remove('hidden');
 
+    renderMockSectionTabs();
     renderMockPalette();
     renderMockQuestion();
     startMockTimer();
-    showToast(`Started ${targetUniv} Entrance Exam session with randomized questions!`, 'success');
+    showToast(`Started ${fmt.name} exam - ${built.questions.length} questions, ${formatExamDuration(fmt.duration)}`, 'success');
 }
 
 function startMockTimer() {
@@ -11185,23 +11366,65 @@ function updateMockTimerDisplay() {
     }
 }
 
+function renderMockSectionTabs() {
+    const tabs = document.getElementById('mockSectionTabs');
+    if (!tabs) return;
+
+    tabs.innerHTML = '';
+    state.mock.sections.forEach((sec, idx) => {
+        let answered = 0;
+        for (let i = sec.start; i < sec.end; i++) {
+            if (state.mock.userAnswers[i] !== undefined) answered++;
+        }
+
+        const tab = document.createElement('button');
+        tab.className = 'mock-section-tab';
+        if (idx === state.mock.currentSection) tab.classList.add('active');
+        if (answered === sec.count && sec.count > 0) tab.classList.add('complete');
+
+        const shortLabel = sec.label.replace('Section ', '').replace(' - ', ': ');
+        tab.innerHTML = `<span class="tab-label">${escapeHtml(shortLabel)}</span><span class="tab-meta">${answered}/${sec.count}</span>`;
+
+        tab.addEventListener('click', () => {
+            state.mock.currentSection = idx;
+            state.mock.currentIndex = sec.start;
+            renderMockSectionTabs();
+            renderMockPalette();
+            renderMockQuestion();
+        });
+
+        tabs.appendChild(tab);
+    });
+}
+
 function renderMockPalette() {
     const palette = document.getElementById('paletteGrid');
     if (!palette) return;
 
     palette.innerHTML = '';
-    state.mock.questions.forEach((q, idx) => {
-        const btn = document.createElement('button');
-        btn.className = 'palette-btn';
-        if (idx === state.mock.currentIndex) btn.classList.add('current');
-        else if (state.mock.userAnswers[idx] !== undefined) btn.classList.add('answered');
 
-        btn.textContent = idx + 1;
-        btn.addEventListener('click', () => {
-            state.mock.currentIndex = idx;
-            renderMockQuestion();
-        });
-        palette.appendChild(btn);
+    state.mock.sections.forEach(sec => {
+        const header = document.createElement('div');
+        header.className = 'palette-section-header';
+        header.textContent = sec.label.replace('Section ', '').replace(' - ', ' ');
+        palette.appendChild(header);
+
+        for (let idx = sec.start; idx < sec.end; idx++) {
+            const btn = document.createElement('button');
+            btn.className = 'p-btn';
+            if (idx === state.mock.currentIndex) btn.classList.add('active');
+            else if (state.mock.userAnswers[idx] !== undefined) btn.classList.add('answered');
+
+            btn.textContent = idx + 1;
+            btn.addEventListener('click', () => {
+                state.mock.currentIndex = idx;
+                syncMockSectionFromIndex();
+                renderMockSectionTabs();
+                renderMockPalette();
+                renderMockQuestion();
+            });
+            palette.appendChild(btn);
+        }
     });
 }
 
@@ -11212,7 +11435,17 @@ function renderMockQuestion() {
 
     if (!q) return;
 
-    document.getElementById('mockQNumText').textContent = `Question ${index + 1} of ${qList.length}`;
+    const sec = state.mock.sections[state.mock.currentSection];
+
+    const indexText = document.getElementById('mockQIndexText');
+    if (indexText) indexText.textContent = `Question ${index + 1} of ${qList.length}`;
+
+    const sectionName = document.getElementById('mockSectionName');
+    if (sectionName && sec) sectionName.textContent = sec.label;
+
+    const subjectBadge = document.getElementById('mockQSubject');
+    if (subjectBadge && q.subject) subjectBadge.textContent = q.subject;
+
     document.getElementById('mockQText').textContent = q.question;
 
     const optionsContainer = document.getElementById('mockOptionsContainer');
@@ -11233,6 +11466,7 @@ function renderMockQuestion() {
 
         btn.addEventListener('click', () => {
             state.mock.userAnswers[index] = optIdx;
+            renderMockSectionTabs();
             renderMockPalette();
             renderMockQuestion();
         });
@@ -11242,6 +11476,9 @@ function renderMockQuestion() {
 
     const prevBtn = document.getElementById('mockPrevBtn');
     if (prevBtn) prevBtn.disabled = (index === 0);
+
+    const nextBtn = document.getElementById('mockNextBtn');
+    if (nextBtn) nextBtn.disabled = (index === qList.length - 1);
 
     renderMockPalette();
 }
@@ -11254,15 +11491,18 @@ function submitMockExam() {
     let wrongCount = 0;
     let unattempted = 0;
 
-    state.mock.questions.forEach((q, idx) => {
-        const userAns = state.mock.userAnswers[idx];
-        if (userAns === undefined) {
-            unattempted++;
-        } else if (userAns === q.correct) {
-            correctCount++;
-        } else {
-            wrongCount++;
+    const sectionStats = state.mock.sections.map(sec => {
+        let correct = 0, wrong = 0, un = 0;
+        for (let i = sec.start; i < sec.end; i++) {
+            const userAns = state.mock.userAnswers[i];
+            if (userAns === undefined) un++;
+            else if (userAns === state.mock.questions[i].correct) correct++;
+            else wrong++;
         }
+        correctCount += correct;
+        wrongCount += wrong;
+        unattempted += un;
+        return { label: sec.label, correct, wrong, unattempted, total: sec.count };
     });
 
     state.userStats.mockExamsDone++;
@@ -11278,9 +11518,95 @@ function submitMockExam() {
     const total = state.mock.questions.length;
     const accuracy = total > 0 ? Math.round((correctCount / total) * 100) : 0;
     document.getElementById('resAccuracy').textContent = `${accuracy}%`;
-    document.getElementById('mockResultScoreText').textContent = `${state.mock.targetUniv} Mock Score: ${correctCount} / ${total} Marks!`;
 
+    const fmt = EXAM_FORMATS[state.mock.examFormat] || EXAM_FORMATS.TU;
+    document.getElementById('mockResultScoreText').textContent = `${fmt.name} | Score: ${correctCount} / ${total} Marks`;
+
+    const percentile = computeExamPercentile(accuracy);
+    document.getElementById('mockResultPercentile').textContent = `Estimated Percentile: ${percentile}%`;
+
+    const statusEl = document.getElementById('mockResultStatus');
+    const passed = accuracy >= fmt.passPercent;
+    statusEl.textContent = passed ? 'PASSED' : 'FAILED';
+    statusEl.className = 'result-status-badge ' + (passed ? 'pass' : 'fail');
+
+    renderMockSectionBreakdown(sectionStats);
+    renderMockReview();
     updateUI();
+}
+
+function computeExamPercentile(scorePercent) {
+    const clamped = Math.max(0, Math.min(100, scorePercent));
+    const p = 100 * (1 - Math.pow((100 - clamped) / 100, 1.5));
+    return Math.max(0, Math.min(99, Math.round(p)));
+}
+
+function renderMockSectionBreakdown(stats) {
+    const container = document.getElementById('mockSectionBreakdown');
+    if (!container) return;
+    container.innerHTML = '';
+
+    stats.forEach(s => {
+        const pct = s.total > 0 ? Math.round((s.correct / s.total) * 100) : 0;
+        const card = document.createElement('div');
+        card.className = 'section-stat-card';
+        const shortLabel = s.label.replace('Section ', '').replace(' - ', ': ');
+        card.innerHTML = `
+            <div class="ss-label">${escapeHtml(shortLabel)}</div>
+            <div class="ss-nums">
+                <span class="ss-correct">${s.correct} <small>Correct</small></span>
+                <span class="ss-wrong">${s.wrong} <small>Wrong</small></span>
+                <span class="ss-un">${s.unattempted} <small>Skip</small></span>
+            </div>
+            <div class="ss-bar"><div class="ss-bar-fill" style="width:${pct}%"></div></div>
+        `;
+        container.appendChild(card);
+    });
+}
+
+function renderMockReview() {
+    const container = document.getElementById('mockReviewContainer');
+    if (!container) return;
+    container.innerHTML = '';
+
+    let reviewCount = 0;
+    state.mock.questions.forEach((q, idx) => {
+        const userAns = state.mock.userAnswers[idx];
+        if (userAns === undefined || userAns === q.correct) return;
+        reviewCount++;
+
+        const sec = state.mock.sections.find(s => idx >= s.start && idx < s.end);
+        const secLabel = sec ? sec.label.replace('Section ', '').replace(' - ', ': ') : '';
+
+        const optionsHTML = q.options.map((opt, oi) => {
+            let cls = '';
+            if (oi === q.correct) cls = 'review-opt-correct';
+            else if (oi === userAns) cls = 'review-opt-wrong';
+            return `
+                <div class="review-opt ${cls}">
+                    <span class="opt-prefix">${String.fromCharCode(65 + oi)}</span>
+                    <span>${escapeHtml(opt)}</span>
+                </div>
+            `;
+        }).join('');
+
+        const card = document.createElement('div');
+        card.className = 'review-card';
+        card.innerHTML = `
+            <div class="review-head">
+                <span class="badge badge-subject">${escapeHtml(q.subject || '')}</span>
+                <span class="review-sec">${escapeHtml(secLabel)}</span>
+            </div>
+            <p class="review-q">Q${idx + 1}. ${escapeHtml(q.question)}</p>
+            <div class="review-opts">${optionsHTML}</div>
+            ${q.explanation ? `<p class="review-exp"><strong>Explanation:</strong> ${escapeHtml(q.explanation)}</p>` : ''}
+        `;
+        container.appendChild(card);
+    });
+
+    if (reviewCount === 0) {
+        container.innerHTML = '<p class="review-empty">No incorrect answers. Outstanding!</p>';
+    }
 }
 
 // --- 12. FILE IMPORT ENGINE (ADMIN ONLY) ---

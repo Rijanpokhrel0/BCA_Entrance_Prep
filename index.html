@@ -422,28 +422,17 @@
                             <div class="univ-exam-selector mb-4">
                                 <label for="mockUnivTargetSelect"><strong>Target University Session:</strong></label>
                                 <select id="mockUnivTargetSelect" class="form-select form-select-lg">
-                                    <option value="TU">Tribhuvan University (TU) - 100 Qs / 2 Hrs</option>
-                                    <option value="KU">Kathmandu University (KU) - KUCAT Pattern / 1.5 Hrs</option>
-                                    <option value="PU">Pokhara University (PU) - 100 Qs / 2 Hrs</option>
-                                    <option value="Purbanchal">Purbanchal University - 100 Qs / 2 Hrs</option>
+                                    <option value="TU">Tribhuvan University (TU) - BCA Entrance</option>
+                                    <option value="KU">Kathmandu University (KU) - KUCAT Pattern</option>
+                                    <option value="PU">Pokhara University (PU) - BCA Entrance</option>
+                                    <option value="Purbanchal">Purbanchal University - BCA Entrance</option>
                                     <option value="All">General Combined Nepal University Mock Test</option>
                                 </select>
                             </div>
-                            
-                            <div class="exam-structure">
-                                <div class="struct-box">
-                                    <span class="num" id="structMath">40</span>
-                                    <span class="lbl">Mathematics</span>
-                                </div>
-                                <div class="struct-box">
-                                    <span class="num" id="structEng">40</span>
-                                    <span class="lbl">English</span>
-                                </div>
-                                <div class="struct-box">
-                                    <span class="num" id="structCS">20</span>
-                                    <span class="lbl">Computer & GK</span>
-                                </div>
-                            </div>
+
+                            <div class="exam-summary-line" id="examSummaryInfo"></div>
+
+                            <div class="exam-structure" id="examStructureInfo"></div>
 
                             <button class="btn btn-primary btn-xl" id="startFullMockExamBtn">
                                 <i class="fa-solid fa-play"></i> Start Entrance Session
@@ -475,8 +464,10 @@
                         </div>
 
                         <div class="mock-exam-main">
+                            <div class="mock-section-tabs" id="mockSectionTabs"></div>
                             <div class="quiz-card-wrapper">
                                 <div class="quiz-header">
+                                    <span class="badge badge-univ" id="mockSectionName">Section A</span>
                                     <span class="badge badge-subject" id="mockQSubject">Mathematics</span>
                                     <span id="mockQIndexText">Question 1 of 100</span>
                                 </div>
@@ -502,6 +493,8 @@
                             <div class="trophy-badge"><i class="fa-solid fa-trophy"></i></div>
                             <h2>Exam Performance Report</h2>
                             <p id="mockResultScoreText">You scored 78 / 100</p>
+                            <span class="result-status-badge" id="mockResultStatus">PASSED</span>
+                            <p class="result-percentile" id="mockResultPercentile">Estimated Percentile: --</p>
                         </div>
 
                         <div class="result-breakdown-grid">
@@ -523,11 +516,21 @@
                             </div>
                         </div>
 
+                        <div class="result-section-breakdown">
+                            <h3>Section-wise Performance</h3>
+                            <div class="section-breakdown-grid" id="mockSectionBreakdown"></div>
+                        </div>
+
                         <div class="result-actions">
+                            <button class="btn btn-outline" id="reviewAnswersBtn">
+                                <i class="fa-solid fa-eye"></i> Review Answers
+                            </button>
                             <button class="btn btn-outline" id="retakeMockBtn">
                                 <i class="fa-solid fa-rotate"></i> Retake Exam
                             </button>
                         </div>
+
+                        <div class="mock-review hidden" id="mockReviewContainer"></div>
                     </div>
                 </section>
 
