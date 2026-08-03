@@ -10356,18 +10356,6 @@ const defaultQuestions = [
 
 ];
 
-// --- 2. DEFAULT REVISION FLASHCARDS ---
-const defaultFlashcards = [
-    { id: 1, category: "CS", term: "OSI Model Layers", definition: "7 Layers: Physical, Data Link, Network, Transport, Session, Presentation, Application." },
-    { id: 2, category: "CS", term: "CPU Components", definition: "ALU (Arithmetic Logic Unit), CU (Control Unit), and Registers." },
-    { id: 3, category: "CS", term: "Stack Data Structure", definition: "LIFO (Last In First Out) system. Primary operations: Push and Pop." },
-    { id: 4, category: "Math", term: "Pythagorean Identity", definition: "sin²(θ) + cos²(θ) = 1, 1 + tan²(θ) = sec²(θ)." },
-    { id: 5, category: "Math", term: "Derivative of x^n", definition: "d/dx [x^n] = n · x^(n-1)." },
-    { id: 6, category: "English", term: "Active vs Passive Voice", definition: "Active: Subject performs action. Passive: Object receives action (be + past participle)." },
-    { id: 7, category: "CS", term: "Primary Key vs Foreign Key", definition: "Primary Key: Uniquely identifies row (no nulls). Foreign Key: References primary key in another table." },
-    { id: 8, category: "Math", term: "AP Sum Formula", definition: "S_n = (n/2) · [2a + (n-1)d] or S_n = (n/2) · [a + l]." }
-];
-
 // --- 3. UNIVERSITY PORTALS INFORMATION ---
 const universityInfo = {
     TU: {
@@ -10440,7 +10428,6 @@ const universityInfo = {
 // --- 4. GLOBAL APP STATE ---
 let state = {
     questions: [],
-    flashcards: [],
     currentView: 'dashboard',
     theme: 'light',
     isAdmin: false, // Default role: Student
@@ -10491,13 +10478,11 @@ document.addEventListener('DOMContentLoaded', () => {
     initMockExamMode();
     initImportModule();
     initQuestionBank();
-    initFlashcards();
     initGlobalSearch();
     
     // Initial display renders
     filterPracticeQuestions();
     renderQuestionBank();
-    renderFlashcards();
     updateUI();
     updateAdminUI();
 });
@@ -10534,8 +10519,6 @@ function loadStateFromStorage() {
         if (!q.difficulty) q.difficulty = "Medium";
         if (!q.source) q.source = `${q.univ || 'Nepal'} Entrance Question Bank`;
     });
-
-    state.flashcards = [...defaultFlashcards];
 }
 
 function saveStateToStorage() {
@@ -10643,7 +10626,6 @@ function switchView(viewName) {
         practice: { title: "Quick Practice & Randomized Quiz", sub: "Adaptive, randomized questions with instant solution explanations." },
         mocktest: { title: "University Entrance Mock Exams", sub: "Simulated timed entrance examinations with automated scoring." },
         questionbank: { title: "Question Bank & Data Repository", sub: "Search, filter, and review practice questions from credible online sources." },
-        flashcards: { title: "Revision Flashcards", sub: "Quick term definitions, computer concepts, and mathematical formulas." },
         import: { title: "Add/Import Question Papers", sub: "Upload custom JSON/TXT files or paste question sets directly." },
         analytics: { title: "Performance & Skill Analytics", sub: "Track accuracy, subject strengths, and overall entrance readiness." }
     };
@@ -10731,6 +10713,7 @@ function updateAdminUI() {
     const adminNav = document.getElementById('navItemImport');
     const adminBanner = document.getElementById('dashImportBanner');
     const adminQbar = document.getElementById('adminQbankBar');
+    const adminHeroBtn = document.getElementById('dashImportFileBtn');
     const icon = document.getElementById('adminToggleIcon');
     const text = document.getElementById('adminToggleText');
     const toggleBtn = document.getElementById('adminToggleBtn');
@@ -10739,6 +10722,7 @@ function updateAdminUI() {
         adminNav?.classList.remove('hidden');
         adminBanner?.classList.remove('hidden');
         adminQbar?.classList.remove('hidden');
+        adminHeroBtn?.classList.remove('hidden');
         if (icon) icon.className = 'fa-solid fa-lock-open text-emerald';
         if (text) text.textContent = 'Admin Mode (Active)';
         toggleBtn?.classList.add('active');
@@ -10746,6 +10730,7 @@ function updateAdminUI() {
         adminNav?.classList.add('hidden');
         adminBanner?.classList.add('hidden');
         adminQbar?.classList.add('hidden');
+        adminHeroBtn?.classList.add('hidden');
         if (icon) icon.className = 'fa-solid fa-lock';
         if (text) text.textContent = 'Admin Mode';
         toggleBtn?.classList.remove('active');
@@ -11836,44 +11821,6 @@ window.triggerEditQuestion = function(qId) {
 };
 
 // --- 14. FLASHCARDS & ANALYTICS ---
-function initFlashcards() {
-    document.querySelectorAll('.category-pills .pill-btn').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            document.querySelectorAll('.category-pills .pill-btn').forEach(b => b.classList.remove('active'));
-            e.currentTarget.classList.add('active');
-            renderFlashcards(e.currentTarget.getAttribute('data-fc-category'));
-        });
-    });
-}
-
-function renderFlashcards(category = 'All') {
-    const grid = document.getElementById('flashcardsGrid');
-    if (!grid) return;
-
-    grid.innerHTML = '';
-    const filtered = category === 'All' ? state.flashcards : state.flashcards.filter(f => f.category === category);
-
-    filtered.forEach(card => {
-        const fc = document.createElement('div');
-        fc.className = 'flashcard';
-        fc.innerHTML = `
-            <div class="flashcard-inner">
-                <div class="flashcard-front">
-                    <h4>${escapeHtml(card.term)}</h4>
-                    <span>Click to reveal definition / formula <i class="fa-solid fa-rotate"></i></span>
-                </div>
-                <div class="flashcard-back">
-                    <p>${escapeHtml(card.definition)}</p>
-                </div>
-            </div>
-        `;
-        fc.addEventListener('click', () => {
-            fc.classList.toggle('flipped');
-        });
-        grid.appendChild(fc);
-    });
-}
-
 function renderAnalytics() {
     const mathStats = state.userStats.subjectStats["Mathematics"] || { attempted: 0, correct: 0 };
     const englishStats = state.userStats.subjectStats["English"] || { attempted: 0, correct: 0 };

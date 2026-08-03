@@ -58,10 +58,6 @@
                     <i class="fa-solid fa-book-open"></i>
                     <span>Question Bank</span>
                 </button>
-                <button class="nav-item" data-view="flashcards">
-                    <i class="fa-solid fa-layer-group"></i>
-                    <span>Flashcards</span>
-                </button>
                 <button class="nav-item admin-only-nav hidden" id="navItemImport" data-view="import">
                     <i class="fa-solid fa-file-arrow-up text-amber"></i>
                     <span>Add/Import Qs</span>
@@ -147,7 +143,7 @@
                                 <button class="btn btn-primary btn-lg" id="dashGoUniversitiesBtn">
                                     <i class="fa-solid fa-building-columns"></i> University Sessions
                                 </button>
-                                <button class="btn btn-glass btn-lg" id="dashImportFileBtn">
+                                <button class="btn btn-glass btn-lg admin-only-element hidden" id="dashImportFileBtn">
                                     <i class="fa-solid fa-file-import"></i> Upload Question File
                                 </button>
                             </div>
@@ -574,26 +570,7 @@
                     </div>
                 </section>
 
-                <!-- VIEW 6: FLASHCARDS -->
-                <section id="view-flashcards" class="view-panel">
-                    <div class="flashcards-header">
-                        <h3><i class="fa-solid fa-brain"></i> Quick Revision Flashcards</h3>
-                        <p>Flip cards for key computer concepts, math formulas, and grammar rules.</p>
-                        
-                        <div class="category-pills">
-                            <button class="pill-btn active" data-fc-category="All">All Cards</button>
-                            <button class="pill-btn" data-fc-category="CS">Computer Terms</button>
-                            <button class="pill-btn" data-fc-category="Math">Math Formulas</button>
-                            <button class="pill-btn" data-fc-category="English">English Vocab</button>
-                        </div>
-                    </div>
-
-                    <div class="flashcards-grid" id="flashcardsGrid">
-                        <!-- Dynamic Flashcards -->
-                    </div>
-                </section>
-
-                <!-- VIEW 7: IMPORT FILE -->
+                <!-- VIEW 6: IMPORT FILE -->
                 <section id="view-import" class="view-panel">
                     <div class="import-layout">
                         <div class="import-card">
