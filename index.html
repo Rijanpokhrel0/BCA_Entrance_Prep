@@ -62,9 +62,9 @@
                     <i class="fa-solid fa-layer-group"></i>
                     <span>Flashcards</span>
                 </button>
-                <button class="nav-item" data-view="import">
-                    <i class="fa-solid fa-file-arrow-up"></i>
-                    <span>Import File / Add</span>
+                <button class="nav-item admin-only-nav hidden" id="navItemImport" data-view="import">
+                    <i class="fa-solid fa-file-arrow-up text-amber"></i>
+                    <span>Add/Import Qs</span>
                 </button>
                 <button class="nav-item" data-view="analytics">
                     <i class="fa-solid fa-chart-pie"></i>
@@ -73,6 +73,12 @@
             </nav>
 
             <div class="sidebar-footer">
+                <div class="admin-mode-pill" id="adminToggleContainer">
+                    <button class="btn-admin-mode" id="adminToggleBtn">
+                        <i class="fa-solid fa-lock" id="adminToggleIcon"></i>
+                        <span id="adminToggleText">Admin Mode</span>
+                    </button>
+                </div>
                 <div class="theme-toggle" id="themeToggleBtn">
                     <i class="fa-solid fa-sun text-amber"></i>
                     <span id="themeToggleLabel">Light Mode</span>
@@ -273,19 +279,19 @@
                         </div>
                     </div>
 
-                    <!-- Custom File Banner -->
-                    <div class="file-upload-banner mt-4">
+                    <!-- Custom File Banner (Admin Only) -->
+                    <div class="file-upload-banner mt-4 admin-only-element hidden" id="dashImportBanner">
                         <div class="banner-left">
                             <div class="upload-icon-circle">
                                 <i class="fa-solid fa-cloud-arrow-up"></i>
                             </div>
                             <div>
-                                <h4>Have a specific university question paper?</h4>
-                                <p>Upload your file (PDF/JSON/TXT) or paste questions directly. Our smart parser will create a custom university session for you!</p>
+                                <h4><span class="badge badge-univ">Admin Tool</span> Have a specific university question paper?</h4>
+                                <p>Upload your file (PDF/JSON/TXT) or paste questions directly. Our smart parser will create a custom university session!</p>
                             </div>
                         </div>
                         <button class="btn btn-primary" id="dashGoToImportBtn">
-                            <i class="fa-solid fa-upload"></i> Import File
+                            <i class="fa-solid fa-upload"></i> Import Question File
                         </button>
                     </div>
                 </section>
@@ -505,6 +511,16 @@
 
                 <!-- VIEW 5: QUESTION BANK -->
                 <section id="view-questionbank" class="view-panel">
+                    <div class="admin-qbank-bar admin-only-element hidden mb-3" id="adminQbankBar">
+                        <div class="admin-bar-info">
+                            <span class="badge badge-univ"><i class="fa-solid fa-user-shield"></i> Admin Panel</span>
+                            <span>Manage, Create, Edit, and Delete Question Bank entries</span>
+                        </div>
+                        <button class="btn btn-emerald" id="adminAddQBtn">
+                            <i class="fa-solid fa-plus-circle"></i> Add New Question
+                        </button>
+                    </div>
+
                     <div class="qbank-controls">
                         <div class="qbank-search">
                             <i class="fa-solid fa-magnifying-glass"></i>
@@ -665,6 +681,117 @@ Explanation: 10^2 = 100 so log10(100) = 2."></textarea>
 
             </div>
         </main>
+    </div>
+
+    <!-- Admin Passcode Login Modal -->
+    <div id="adminLoginModal" class="modal-backdrop hidden">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-user-shield text-amber"></i> Admin Portal Login</h3>
+                <button class="close-modal-btn" id="closeAdminLoginModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 16px;">
+                    Enter administrator passcode to enable question management, file imports, and question bank editing.
+                </p>
+                <div class="form-group mb-3">
+                    <label for="adminPasscodeInput">Admin Passcode:</label>
+                    <input type="password" id="adminPasscodeInput" class="form-control" placeholder="Enter password (default: admin123)">
+                </div>
+                <div class="modal-demo-tip">
+                    <i class="fa-solid fa-circle-info text-indigo"></i> Default Admin Passcode is <strong>admin123</strong>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-glass" id="cancelAdminLoginBtn">Cancel</button>
+                <button class="btn btn-primary" id="submitAdminLoginBtn">
+                    <i class="fa-solid fa-key"></i> Authenticate & Unlock
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Question Add/Edit Modal -->
+    <div id="adminQuestionModal" class="modal-backdrop hidden">
+        <div class="modal-card modal-lg">
+            <div class="modal-header">
+                <h3 id="adminQModalTitle"><i class="fa-solid fa-pen-to-square text-emerald"></i> Add Question (Admin)</h3>
+                <button class="close-modal-btn" id="closeAdminQModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="adminQForm">
+                    <input type="hidden" id="editQuestionId" value="">
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="qUnivInput">Target University:</label>
+                            <select id="qUnivInput" class="form-select" required>
+                                <option value="TU">Tribhuvan University (TU)</option>
+                                <option value="KU">Kathmandu University (KU)</option>
+                                <option value="PU">Pokhara University (PU)</option>
+                                <option value="Purbanchal">Purbanchal University</option>
+                                <option value="General">General / Custom</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="qSubjectInput">Subject:</label>
+                            <select id="qSubjectInput" class="form-select" required>
+                                <option value="English">English</option>
+                                <option value="Mathematics">Mathematics</option>
+                                <option value="Computer & IT">Computer & IT / GK</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="qTextInput">Question Text:</label>
+                        <textarea id="qTextInput" class="form-control" rows="3" placeholder="Type entrance question here..." required></textarea>
+                    </div>
+
+                    <div class="options-form-grid">
+                        <div class="form-group">
+                            <label for="optA">Option A:</label>
+                            <input type="text" id="optA" class="form-control" placeholder="Option A text" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="optB">Option B:</label>
+                            <input type="text" id="optB" class="form-control" placeholder="Option B text" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="optC">Option C:</label>
+                            <input type="text" id="optC" class="form-control" placeholder="Option C text" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="optD">Option D:</label>
+                            <input type="text" id="optD" class="form-control" placeholder="Option D text" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row mt-3">
+                        <div class="form-group">
+                            <label for="correctOptSelect">Correct Option:</label>
+                            <select id="correctOptSelect" class="form-select" required>
+                                <option value="0">Option A</option>
+                                <option value="1">Option B</option>
+                                <option value="2">Option C</option>
+                                <option value="3">Option D</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group mt-3">
+                        <label for="qExplanationInput">Solution Explanation:</label>
+                        <textarea id="qExplanationInput" class="form-control" rows="2" placeholder="Explain why this answer is correct..."></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-glass" id="cancelAdminQBtn">Cancel</button>
+                <button class="btn btn-emerald" id="saveAdminQBtn">
+                    <i class="fa-solid fa-floppy-disk"></i> Save Question
+                </button>
+            </div>
+        </div>
     </div>
 
     <!-- Notification Toast -->
