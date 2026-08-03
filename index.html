@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCA PrepMaster - Nepal University Entrance Preparation (TU, KU, PU & More)</title>
+    <meta name="description" content="Ace your BCA Entrance Examination for Tribhuvan University (TU), Kathmandu University (KU), Pokhara University (PU), Purbanchal University, and other Nepalese institutions.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-theme">
+    <!-- App Container -->
+    <div id="app" class="app-container">
+        
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="brand-text">
+                    <h2>BCA<span>Prep</span></h2>
+                    <span class="badge">Nepal 2026</span>
+                </div>
+            </div>
+
+            <nav class="nav-menu">
+                <button class="nav-item active" data-view="dashboard">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </button>
+                <button class="nav-item" data-view="universities">
+                    <i class="fa-solid fa-building-columns"></i>
+                    <span>University Portals</span>
+                    <span class="pulse-dot"></span>
+                </button>
+                <button class="nav-item" data-view="practice">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>Quick Practice</span>
+                </button>
+                <button class="nav-item" data-view="mocktest">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <span>University Mock Exams</span>
+                </button>
+                <button class="nav-item" data-view="questionbank">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>Question Bank</span>
+                </button>
+                <button class="nav-item" data-view="flashcards">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <span>Flashcards</span>
+                </button>
+                <button class="nav-item" data-view="import">
+                    <i class="fa-solid fa-file-arrow-up"></i>
+                    <span>Import File / Add</span>
+                </button>
+                <button class="nav-item" data-view="analytics">
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <span>Performance</span>
+                </button>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="theme-toggle" id="themeToggleBtn">
+                    <i class="fa-solid fa-sun text-amber"></i>
+                    <span id="themeToggleLabel">Light Mode</span>
+                    <div class="toggle-switch"></div>
+                </div>
+                <div class="user-quick-stats">
+                    <div class="stat-mini">
+                        <i class="fa-solid fa-fire text-orange"></i>
+                        <span id="userStreak">1 Day Streak</span>
+                    </div>
+                    <div class="stat-mini">
+                        <i class="fa-solid fa-trophy text-gold"></i>
+                        <span id="userTotalScore">150 XP</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            
+            <!-- Top Header -->
+            <header class="top-header">
+                <div class="header-left">
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="page-title-box">
+                        <h1 id="pageTitle">Dashboard</h1>
+                        <p id="pageSubTitle">Select your target Nepal University entrance session.</p>
+                    </div>
+                </div>
+
+                <div class="header-right">
+                    <div class="search-bar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="globalSearchInput" placeholder="Search questions, TU, KU, PU...">
+                    </div>
+                    
+                    <button class="btn btn-primary" id="quickTestBtn">
+                        <i class="fa-solid fa-play"></i> 10-Min Quiz
+                    </button>
+
+                    <div class="profile-pill">
+                        <div class="avatar">BCA</div>
+                        <div class="user-info">
+                            <span class="user-name">Nepal Aspirant</span>
+                            <span class="user-role">TU | KU | PU | Purbanchal</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dynamic Views Container -->
+            <div class="content-body">
+                
+                <!-- VIEW 1: DASHBOARD -->
+                <section id="view-dashboard" class="view-panel active">
+                    <!-- Hero Banner -->
+                    <div class="hero-card">
+                        <div class="hero-content">
+                            <span class="hero-badge"><i class="fa-solid fa-university"></i> Nepal BCA Entrance Hub</span>
+                            <h2>Prepare for TU, KU, Pokhara & Purbanchal University BCA Entrance</h2>
+                            <p>Select your university exam pattern, practice past model questions, and boost your entrance rank with dedicated session mock tests.</p>
+                            <div class="hero-actions">
+                                <button class="btn btn-primary btn-lg" id="dashGoUniversitiesBtn">
+                                    <i class="fa-solid fa-building-columns"></i> Explore University Sessions
+                                </button>
+                                <button class="btn btn-glass btn-lg" id="dashImportFileBtn">
+                                    <i class="fa-solid fa-file-import"></i> Upload Custom Question File
+                                </button>
+                            </div>
+                        </div>
+                        <div class="hero-decoration">
+                            <div class="floating-card c1">
+                                <i class="fa-solid fa-landmark text-indigo"></i>
+                                <span>TU Model Papers</span>
+                            </div>
+                            <div class="floating-card c2">
+                                <i class="fa-solid fa-graduation-cap text-purple"></i>
+                                <span>KUCAT Logic</span>
+                            </div>
+                            <div class="floating-card c3">
+                                <i class="fa-solid fa-book-bookmark text-emerald"></i>
+                                <span>Pokhara Univ Set</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Key Stats Grid -->
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon bg-indigo-soft">
+                                <i class="fa-solid fa-layer-group text-indigo"></i>
+                            </div>
+                            <div class="stat-details">
+                                <span class="stat-value" id="totalQuestionsCount">0</span>
+                                <span class="stat-label">Total Questions in Bank</span>
+                            </div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon bg-emerald-soft">
+                                <i class="fa-solid fa-circle-check text-emerald"></i>
+                            </div>
+                            <div class="stat-details">
+                                <span class="stat-value" id="answeredCount">0</span>
+                                <span class="stat-label">Questions Attempted</span>
+                            </div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon bg-amber-soft">
+                                <i class="fa-solid fa-bullseye text-amber"></i>
+                            </div>
+                            <div class="stat-details">
+                                <span class="stat-value" id="accuracyRate">0%</span>
+                                <span class="stat-label">Overall Accuracy</span>
+                            </div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon bg-rose-soft">
+                                <i class="fa-solid fa-clock text-rose"></i>
+                            </div>
+                            <div class="stat-details">
+                                <span class="stat-value" id="mockExamsCompleted">0</span>
+                                <span class="stat-label">Mock Exams Completed</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- University Quick Selector Cards -->
+                    <div class="section-header">
+                        <h3><i class="fa-solid fa-building-columns"></i> University-Specific Exam Sessions</h3>
+                        <span class="subtext">Choose your target university for customized exam sessions</span>
+                    </div>
+
+                    <div class="university-grid">
+                        <!-- TU Card -->
+                        <div class="univ-card tu-card" data-univ="TU">
+                            <div class="univ-badge">Most Popular</div>
+                            <div class="univ-logo-circle tu-bg">TU</div>
+                            <h4>Tribhuvan University (TU)</h4>
+                            <p class="univ-desc">BCA Entrance Exam (100 Marks: 40 Math, 40 English, 20 CS/GK)</p>
+                            <div class="univ-features">
+                                <span><i class="fa-solid fa-check text-emerald"></i> Official Model Question Set I & II</span>
+                                <span><i class="fa-solid fa-check text-emerald"></i> 2-Hour Timed Simulation</span>
+                            </div>
+                            <button class="btn btn-primary w-100 start-univ-exam-btn" data-univ="TU">
+                                Start TU Entrance Session <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+
+                        <!-- KU Card -->
+                        <div class="univ-card ku-card" data-univ="KU">
+                            <div class="univ-badge ku-badge">KUCAT Pattern</div>
+                            <div class="univ-logo-circle ku-bg">KU</div>
+                            <h4>Kathmandu University (KU)</h4>
+                            <p class="univ-desc">KUCAT / Computer Science & IT Aptitude Test</p>
+                            <div class="univ-features">
+                                <span><i class="fa-solid fa-check text-emerald"></i> Advanced Mathematics & Logic</span>
+                                <span><i class="fa-solid fa-check text-emerald"></i> Analytical Reasoning</span>
+                            </div>
+                            <button class="btn btn-outline-primary w-100 start-univ-exam-btn" data-univ="KU">
+                                Start KU Entrance Session <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+
+                        <!-- PU Pokhara Card -->
+                        <div class="univ-card pu-card" data-univ="PU">
+                            <div class="univ-badge pu-badge">Pokhara Univ</div>
+                            <div class="univ-logo-circle pu-bg">PU</div>
+                            <h4>Pokhara University (PU)</h4>
+                            <p class="univ-desc">BCA / BIT Entrance Examination</p>
+                            <div class="univ-features">
+                                <span><i class="fa-solid fa-check text-emerald"></i> General Aptitude & Computer</span>
+                                <span><i class="fa-solid fa-check text-emerald"></i> English Proficiency</span>
+                            </div>
+                            <button class="btn btn-outline-primary w-100 start-univ-exam-btn" data-univ="PU">
+                                Start Pokhara Univ Session <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+
+                        <!-- Purbanchal University Card -->
+                        <div class="univ-card purbanchal-card" data-univ="Purbanchal">
+                            <div class="univ-badge pur-badge">Purbanchal</div>
+                            <div class="univ-logo-circle pur-bg">PU</div>
+                            <h4>Purbanchal University</h4>
+                            <p class="univ-desc">BCA / BIT Entrance Test</p>
+                            <div class="univ-features">
+                                <span><i class="fa-solid fa-check text-emerald"></i> Mathematics & English Basics</span>
+                                <span><i class="fa-solid fa-check text-emerald"></i> IT & Computer Fundamentals</span>
+                            </div>
+                            <button class="btn btn-outline-primary w-100 start-univ-exam-btn" data-univ="Purbanchal">
+                                Start Purbanchal Session <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Custom File Banner -->
+                    <div class="file-upload-banner mt-4">
+                        <div class="banner-left">
+                            <div class="upload-icon-circle">
+                                <i class="fa-solid fa-cloud-arrow-up"></i>
+                            </div>
+                            <div>
+                                <h4>Have a specific university question paper?</h4>
+                                <p>Upload your file (PDF/JSON/TXT) or paste questions directly. Our smart parser will create a custom university session for you!</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" id="dashGoToImportBtn">
+                            <i class="fa-solid fa-upload"></i> Import Question File
+                        </button>
+                    </div>
+                </section>
+
+                <!-- VIEW 2: UNIVERSITY DEDICATED PORTALS -->
+                <section id="view-universities" class="view-panel">
+                    <div class="univ-portal-header">
+                        <h3><i class="fa-solid fa-building-columns"></i> Dedicated University Entrance Portals</h3>
+                        <p>Detailed information, syllabus weightage, and custom preparation sessions for each university in Nepal.</p>
+                    </div>
+
+                    <div class="univ-tabs">
+                        <button class="univ-tab-btn active" data-tab-univ="TU">Tribhuvan University (TU)</button>
+                        <button class="univ-tab-btn" data-tab-univ="KU">Kathmandu University (KU)</button>
+                        <button class="univ-tab-btn" data-tab-univ="PU">Pokhara University (PU)</button>
+                        <button class="univ-tab-btn" data-tab-univ="Purbanchal">Purbanchal University</button>
+                        <button class="univ-tab-btn" data-tab-univ="Others">Other Nepal & Foreign Affiliated</button>
+                    </div>
+
+                    <div class="univ-portal-content" id="univPortalContent">
+                        <!-- Dynamic University Portal Details -->
+                    </div>
+                </section>
+
+                <!-- VIEW 3: PRACTICE QUIZ -->
+                <section id="view-practice" class="view-panel">
+                    <div class="quiz-container">
+                        <!-- Quiz Filters Header -->
+                        <div class="quiz-controls-bar">
+                            <div class="filter-group">
+                                <label for="practiceUnivSelect">University:</label>
+                                <select id="practiceUnivSelect" class="form-select">
+                                    <option value="All">All Universities</option>
+                                    <option value="TU">TU (Tribhuvan)</option>
+                                    <option value="KU">KU (Kathmandu)</option>
+                                    <option value="PU">PU (Pokhara)</option>
+                                    <option value="Purbanchal">Purbanchal</option>
+                                </select>
+                            </div>
+                            <div class="filter-group">
+                                <label for="practiceSubjectSelect">Subject:</label>
+                                <select id="practiceSubjectSelect" class="form-select">
+                                    <option value="All">All Subjects</option>
+                                    <option value="Mathematics">Mathematics</option>
+                                    <option value="English">English</option>
+                                    <option value="Computer & IT">Computer & IT / GK</option>
+                                </select>
+                            </div>
+                            <button class="btn btn-primary" id="restartPracticeBtn">
+                                <i class="fa-solid fa-arrows-rotate"></i> Reset Quiz
+                            </button>
+                        </div>
+
+                        <!-- Quiz Card -->
+                        <div class="quiz-card-wrapper" id="quizCardWrapper">
+                            <div class="quiz-header">
+                                <div class="q-meta">
+                                    <span class="badge badge-univ" id="qUnivBadge">TU Pattern</span>
+                                    <span class="badge badge-subject" id="qSubjectBadge">Mathematics</span>
+                                </div>
+                                <div class="q-progress-info">
+                                    <span id="qIndexText">Question 1 of 20</span>
+                                </div>
+                            </div>
+
+                            <div class="quiz-body">
+                                <h3 class="question-text" id="questionText">Loading question...</h3>
+                                
+                                <div class="options-grid" id="optionsContainer">
+                                    <!-- Dynamic Options -->
+                                </div>
+
+                                <div class="explanation-box hidden" id="explanationBox">
+                                    <div class="exp-title">
+                                        <i class="fa-solid fa-lightbulb"></i> Detailed Solution & Explanation:
+                                    </div>
+                                    <div class="exp-content" id="explanationText"></div>
+                                </div>
+                            </div>
+
+                            <div class="quiz-footer">
+                                <button class="btn btn-glass" id="prevQBtn" disabled>
+                                    <i class="fa-solid fa-arrow-left"></i> Previous
+                                </button>
+                                <div class="center-actions">
+                                    <button class="btn btn-outline" id="bookmarkQBtn">
+                                        <i class="fa-regular fa-bookmark"></i> Bookmark
+                                    </button>
+                                </div>
+                                <button class="btn btn-primary" id="nextQBtn">
+                                    Next Question <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- VIEW 4: FULL MOCK TEST -->
+                <section id="view-mocktest" class="view-panel">
+                    <div class="mock-welcome" id="mockWelcomeCard">
+                        <div class="mock-hero">
+                            <div class="exam-icon"><i class="fa-solid fa-award"></i></div>
+                            <h2 id="mockHeroTitle">Select University Entrance Exam Session</h2>
+                            <p id="mockHeroSub">Simulate authentic entrance exams with automated scoring, time limits, and subject weightage.</p>
+
+                            <div class="univ-exam-selector mb-4">
+                                <label for="mockUnivTargetSelect"><strong>Target University Session:</strong></label>
+                                <select id="mockUnivTargetSelect" class="form-select form-select-lg">
+                                    <option value="TU">Tribhuvan University (TU) - 100 Qs / 2 Hrs</option>
+                                    <option value="KU">Kathmandu University (KU) - KUCAT Pattern / 1.5 Hrs</option>
+                                    <option value="PU">Pokhara University (PU) - 100 Qs / 2 Hrs</option>
+                                    <option value="Purbanchal">Purbanchal University - 100 Qs / 2 Hrs</option>
+                                    <option value="All">General Combined Nepal University Mock Test</option>
+                                </select>
+                            </div>
+                            
+                            <div class="exam-structure">
+                                <div class="struct-box">
+                                    <span class="num" id="structMath">40</span>
+                                    <span class="lbl">Mathematics</span>
+                                </div>
+                                <div class="struct-box">
+                                    <span class="num" id="structEng">40</span>
+                                    <span class="lbl">English</span>
+                                </div>
+                                <div class="struct-box">
+                                    <span class="num" id="structCS">20</span>
+                                    <span class="lbl">Computer & GK</span>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-primary btn-xl" id="startFullMockExamBtn">
+                                <i class="fa-solid fa-play"></i> Start Selected Entrance Session
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Active Mock Exam Screen -->
+                    <div class="mock-active-layout hidden" id="mockActiveLayout">
+                        <div class="mock-exam-sidebar">
+                            <div class="exam-timer-card">
+                                <span>Time Remaining</span>
+                                <div class="timer-display" id="mockTimerDisplay">02:00:00</div>
+                            </div>
+
+                            <div class="question-palette">
+                                <h4>Question Palette</h4>
+                                <div class="palette-grid" id="paletteGrid"></div>
+                                <div class="palette-legend">
+                                    <span><i class="dot answered"></i> Answered</span>
+                                    <span><i class="dot current"></i> Current</span>
+                                    <span><i class="dot unvisited"></i> Unvisited</span>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-rose w-100" id="submitExamEarlyBtn">
+                                <i class="fa-solid fa-paper-plane"></i> Submit Exam
+                            </button>
+                        </div>
+
+                        <div class="mock-exam-main">
+                            <div class="quiz-card-wrapper">
+                                <div class="quiz-header">
+                                    <span class="badge badge-subject" id="mockQSubject">Mathematics</span>
+                                    <span id="mockQIndexText">Question 1 of 100</span>
+                                </div>
+                                <div class="quiz-body">
+                                    <h3 class="question-text" id="mockQText">Question content...</h3>
+                                    <div class="options-grid" id="mockOptionsContainer"></div>
+                                </div>
+                                <div class="quiz-footer">
+                                    <button class="btn btn-glass" id="mockPrevBtn">
+                                        <i class="fa-solid fa-chevron-left"></i> Previous
+                                    </button>
+                                    <button class="btn btn-primary" id="mockNextBtn">
+                                        Next <i class="fa-solid fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mock Exam Result Screen -->
+                    <div class="mock-result-card hidden" id="mockResultCard">
+                        <div class="result-header">
+                            <div class="trophy-badge"><i class="fa-solid fa-trophy"></i></div>
+                            <h2>Exam Performance Report</h2>
+                            <p id="mockResultScoreText">You scored 78 / 100</p>
+                        </div>
+
+                        <div class="result-breakdown-grid">
+                            <div class="r-card">
+                                <span class="r-val text-emerald" id="resCorrect">0</span>
+                                <span class="r-lbl">Correct Answers</span>
+                            </div>
+                            <div class="r-card">
+                                <span class="r-val text-rose" id="resWrong">0</span>
+                                <span class="r-lbl">Incorrect Answers</span>
+                            </div>
+                            <div class="r-card">
+                                <span class="r-val text-amber" id="resUnanswered">0</span>
+                                <span class="r-lbl">Unattempted</span>
+                            </div>
+                            <div class="r-card">
+                                <span class="r-val text-indigo" id="resAccuracy">0%</span>
+                                <span class="r-lbl">Accuracy</span>
+                            </div>
+                        </div>
+
+                        <div class="result-actions">
+                            <button class="btn btn-outline" id="retakeMockBtn">
+                                <i class="fa-solid fa-rotate"></i> Retake Exam
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- VIEW 5: QUESTION BANK -->
+                <section id="view-questionbank" class="view-panel">
+                    <div class="qbank-controls">
+                        <div class="qbank-search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" id="qbankSearchInput" placeholder="Filter questions by keyword, formula, or university...">
+                        </div>
+                        <select id="qbankSubjectFilter" class="form-select">
+                            <option value="All">All Subjects</option>
+                            <option value="Mathematics">Mathematics</option>
+                            <option value="English">English</option>
+                            <option value="Computer & IT">Computer Science & GK</option>
+                        </select>
+                    </div>
+
+                    <div class="qbank-list" id="qbankListContainer">
+                        <!-- Dynamic questions list -->
+                    </div>
+                </section>
+
+                <!-- VIEW 6: FLASHCARDS -->
+                <section id="view-flashcards" class="view-panel">
+                    <div class="flashcards-header">
+                        <h3><i class="fa-solid fa-brain"></i> Quick Revision Flashcards</h3>
+                        <p>Flip cards for key computer concepts, math formulas, and grammar rules.</p>
+                        
+                        <div class="category-pills">
+                            <button class="pill-btn active" data-fc-category="All">All Cards</button>
+                            <button class="pill-btn" data-fc-category="CS">Computer Terms</button>
+                            <button class="pill-btn" data-fc-category="Math">Math Formulas</button>
+                            <button class="pill-btn" data-fc-category="English">English Vocab</button>
+                        </div>
+                    </div>
+
+                    <div class="flashcards-grid" id="flashcardsGrid">
+                        <!-- Dynamic Flashcards -->
+                    </div>
+                </section>
+
+                <!-- VIEW 7: IMPORT FILE -->
+                <section id="view-import" class="view-panel">
+                    <div class="import-layout">
+                        <div class="import-card">
+                            <div class="card-title">
+                                <i class="fa-solid fa-file-circle-plus text-indigo"></i>
+                                <div>
+                                    <h3>Upload Entrance Question File</h3>
+                                    <p>Upload your file (JSON, TXT, or CSV) containing questions for BCA preparation.</p>
+                                </div>
+                            </div>
+
+                            <div class="drop-zone" id="dropZone">
+                                <div class="drop-zone-content">
+                                    <i class="fa-solid fa-cloud-arrow-up cloud-icon"></i>
+                                    <h4>Drag & Drop your question file here</h4>
+                                    <p>Supports .json, .txt, or .csv formats</p>
+                                    <span class="or-divider">OR</span>
+                                    <label class="btn btn-primary custom-file-btn">
+                                        <i class="fa-solid fa-folder-open"></i> Browse File
+                                        <input type="file" id="fileInput" accept=".json,.txt,.csv">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Manual Text / Question Paste Card -->
+                        <div class="import-card">
+                            <div class="card-title">
+                                <i class="fa-solid fa-keyboard text-emerald"></i>
+                                <div>
+                                    <h3>Paste Question Text Directly</h3>
+                                    <p>Paste raw text or question sets below. Our auto-parser will analyze & extract questions!</p>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="rawTextImport">Paste Questions Here:</label>
+                                <textarea id="rawTextImport" rows="8" class="form-control" placeholder="1. What is the value of log10(100)?
+a) 1
+b) 2
+c) 10
+d) 100
+Answer: b
+Explanation: 10^2 = 100 so log10(100) = 2."></textarea>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="defaultSubjectSelect">Default Subject:</label>
+                                    <select id="defaultSubjectSelect" class="form-select">
+                                        <option value="Computer & IT">Computer & IT</option>
+                                        <option value="Mathematics">Mathematics</option>
+                                        <option value="English">English</option>
+                                    </select>
+                                </div>
+                                <div class="form-group align-end">
+                                    <button class="btn btn-emerald w-100" id="parseRawTextBtn">
+                                        <i class="fa-solid fa-wand-magic-sparkles"></i> Parse & Add to Question Bank
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div id="importStatusAlert" class="status-alert hidden"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- VIEW 8: PERFORMANCE ANALYTICS -->
+                <section id="view-analytics" class="view-panel">
+                    <div class="analytics-grid">
+                        <div class="analytics-card">
+                            <h3><i class="fa-solid fa-chart-bar"></i> Subject Accuracy Breakdown</h3>
+                            <div class="breakdown-bars">
+                                <div class="breakdown-item">
+                                    <div class="b-head">
+                                        <span>Mathematics</span>
+                                        <span id="mathAccuracyText">0%</span>
+                                    </div>
+                                    <div class="progress-bar-bg">
+                                        <div class="progress-bar-fill math-bar" id="mathAnalyticsBar" style="width: 0%"></div>
+                                    </div>
+                                </div>
+
+                                <div class="breakdown-item">
+                                    <div class="b-head">
+                                        <span>English & Grammar</span>
+                                        <span id="englishAccuracyText">0%</span>
+                                    </div>
+                                    <div class="progress-bar-bg">
+                                        <div class="progress-bar-fill english-bar" id="englishAnalyticsBar" style="width: 0%"></div>
+                                    </div>
+                                </div>
+
+                                <div class="breakdown-item">
+                                    <div class="b-head">
+                                        <span>Computer Science & GK</span>
+                                        <span id="csAccuracyText">0%</span>
+                                    </div>
+                                    <div class="progress-bar-bg">
+                                        <div class="progress-bar-fill cs-bar" id="csAnalyticsBar" style="width: 0%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="analytics-card">
+                            <h3><i class="fa-solid fa-bullseye"></i> Entrance Admission Readiness</h3>
+                            <div class="readiness-score-box">
+                                <div class="score-circle" id="readinessCircle">
+                                    <span class="big-score" id="readinessScoreVal">0%</span>
+                                    <span class="lbl">Readiness</span>
+                                </div>
+                                <div class="readiness-feedback" id="readinessFeedbackText">
+                                    Complete practice tests to generate your BCA Entrance Admission chances analysis.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <!-- App JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>

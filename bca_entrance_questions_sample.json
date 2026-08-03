@@ -1,0 +1,39 @@
+[
+  {
+    "id": 501,
+    "subject": "Computer & IT",
+    "question": "What is the primary function of an Operating System?",
+    "options": [
+      "Resource Management & Process Control",
+      "Compiling source code to binary",
+      "Designing database schemas",
+      "Protecting hardware against physical damage"
+    ],
+    "correct": 0,
+    "explanation": "An Operating System manages computer hardware, system memory, CPU cycles, and provides services for computer programs."
+  },
+  {
+    "id": 502,
+    "subject": "Mathematics",
+    "question": "If sin θ = 3/5, what is the value of cos θ (assuming θ is an acute angle)?",
+    "options": ["4/5", "3/4", "5/4", "5/3"],
+    "correct": 0,
+    "explanation": "Using Pythagorean identity: cos θ = √(1 - sin² θ) = √(1 - 9/25) = √(16/25) = 4/5."
+  },
+  {
+    "id": 503,
+    "subject": "English",
+    "question": "Find the synonym for 'METICULOUS':",
+    "options": ["Careless", "Thorough & Precise", "Rapid", "Obsolete"],
+    "correct": 1,
+    "explanation": "Meticulous means showing great attention to detail; very careful and precise."
+  },
+  {
+    "id": 504,
+    "subject": "Computer & IT",
+    "question": "Which layer of the OSI Model handles IP Addressing and Routing?",
+    "options": ["Data Link Layer", "Network Layer", "Transport Layer", "Application Layer"],
+    "correct": 1,
+    "explanation": "The Network Layer (Layer 3) handles IP addressing, packet forwarding, and routing."
+  }
+]

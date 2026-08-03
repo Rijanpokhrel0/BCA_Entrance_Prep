@@ -1,0 +1,199 @@
+[
+  {
+    "id": 1001,
+    "subject": "English",
+    "question": "The danger of volcanoes .............. not to be taken lightly.",
+    "options": ["must", "might", "has", "have"],
+    "correct": 0,
+    "explanation": "Must indicates strong obligation/necessity: 'must not be taken lightly'."
+  },
+  {
+    "id": 1002,
+    "subject": "English",
+    "question": "Ramesh ................ here for the last seven years.",
+    "options": ["worked", "is working", "has worked", "works"],
+    "correct": 2,
+    "explanation": "Present perfect tense 'has worked' is used with time expressions like 'for the last seven years'."
+  },
+  {
+    "id": 1003,
+    "subject": "English",
+    "question": "Supply the correct tag: 'Let us go, ..............'",
+    "options": ["shall we?", "will we?", "do we?", "don't we?"],
+    "correct": 0,
+    "explanation": "Imperative sentences beginning with 'Let us' take 'shall we?' as question tag."
+  },
+  {
+    "id": 1004,
+    "subject": "English",
+    "question": "Two ladies had ............. hand bags stolen at the Kathmandu Mall.",
+    "options": ["its", "her", "their", "they"],
+    "correct": 2,
+    "explanation": "Plural subject 'Two ladies' requires plural possessive pronoun 'their'."
+  },
+  {
+    "id": 1005,
+    "subject": "English",
+    "question": "Sincere people abide ............. their promise.",
+    "options": ["by", "of", "at", "on"],
+    "correct": 0,
+    "explanation": "The idiom is 'abide by' meaning to accept or act in accordance with a rule or promise."
+  },
+  {
+    "id": 1006,
+    "subject": "English",
+    "question": "The new manager will ............ his position on August 30.",
+    "options": ["take off", "take out", "take over", "take after"],
+    "correct": 2,
+    "explanation": "'Take over' means to assume control or responsibility of a position."
+  },
+  {
+    "id": 1007,
+    "subject": "English",
+    "question": "Choose the correct meaning of 'A Lion's share':",
+    "options": ["No share at all", "Greater share of a thing", "Very small part", "Little profit"],
+    "correct": 1,
+    "explanation": "'A lion's share' refers to the major or largest portion of something."
+  },
+  {
+    "id": 1008,
+    "subject": "English",
+    "question": "Neither of them ............ a problem.",
+    "options": ["anticipate", "anticipates", "have anticipated", "are anticipating"],
+    "correct": 1,
+    "explanation": "'Neither' is singular and takes a singular verb ('anticipates')."
+  },
+  {
+    "id": 1009,
+    "subject": "English",
+    "question": "Choose the correct passive voice: 'We celebrate Democracy Day on Falgun seven.'",
+    "options": [
+      "Democracy Day is celebrated on Falgun seven by us.",
+      "Democracy Day was celebrated on Falgun seven by us.",
+      "Democracy Day has been celebrated on Falgun seven by us.",
+      "Democracy Day had been celebrated on Falgun seven by us."
+    ],
+    "correct": 0,
+    "explanation": "Simple present tense in active voice changes to 'is + past participle' in passive voice."
+  },
+  {
+    "id": 1010,
+    "subject": "English",
+    "question": "That which cannot be divided is called:",
+    "options": ["Indelible", "Indivisible", "Insoluble", "Indefensible"],
+    "correct": 1,
+    "explanation": "Indivisible means unable to be divided into separate parts."
+  },
+  {
+    "id": 1011,
+    "subject": "Mathematics",
+    "question": "A number divided by 10 gives a remainder 7. If the same number is divided by 5, what will be the remainder?",
+    "options": ["1", "2", "3", "4"],
+    "correct": 1,
+    "explanation": "Number N = 10k + 7. Divided by 5: (10k + 7)/5 = 2k + 1 with remainder 2 (7 mod 5 = 2)."
+  },
+  {
+    "id": 1012,
+    "subject": "Mathematics",
+    "question": "Which value of 'n' gives a negative result for (n² - 15)?",
+    "options": ["7", "5", "3", "4"],
+    "correct": 2,
+    "explanation": "For n = 3: 3² - 15 = 9 - 15 = -6 (negative)."
+  },
+  {
+    "id": 1013,
+    "subject": "Mathematics",
+    "question": "If 'n' is an integer, which of the following expressions must always be even?",
+    "options": ["n(n + 1)", "n² + 1", "n(n + 2)", "n(n + 4)"],
+    "correct": 0,
+    "explanation": "n(n+1) is the product of two consecutive integers, one of which must be even. Hence, the product is always even."
+  },
+  {
+    "id": 1014,
+    "subject": "Mathematics",
+    "question": "What is the sum of the first five prime numbers?",
+    "options": ["18", "25", "26", "28"],
+    "correct": 3,
+    "explanation": "First 5 prime numbers: 2 + 3 + 5 + 7 + 11 = 28."
+  },
+  {
+    "id": 1015,
+    "subject": "Mathematics",
+    "question": "If 6 is subtracted from the cube of a number and the result is 21, what is the number?",
+    "options": ["2", "3", "4", "5"],
+    "correct": 1,
+    "explanation": "x³ - 6 = 21 => x³ = 27 => x = ∛27 = 3."
+  },
+  {
+    "id": 1016,
+    "subject": "Mathematics",
+    "question": "If the product of two consecutive even numbers is 288, what are the numbers?",
+    "options": ["14, 12", "14, 16", "16, 18", "22, 24"],
+    "correct": 2,
+    "explanation": "16 * 18 = 288."
+  },
+  {
+    "id": 1017,
+    "subject": "Mathematics",
+    "question": "If 6p + 6q = 36, what is the average value of p and q?",
+    "options": ["2", "3", "4", "5"],
+    "correct": 1,
+    "explanation": "6(p + q) = 36 => p + q = 6. Average = (p + q) / 2 = 6 / 2 = 3."
+  },
+  {
+    "id": 1018,
+    "subject": "Mathematics",
+    "question": "What is the slope of the line 2x - 4y = 9?",
+    "options": ["1", "1/2", "2", "3"],
+    "correct": 1,
+    "explanation": "4y = 2x - 9 => y = (1/2)x - (9/4). Slope m = 1/2."
+  },
+  {
+    "id": 1019,
+    "subject": "Computer & IT",
+    "question": "When did the new constitution of Nepal 'Nepal Ko Sambidhan' come into effect?",
+    "options": ["2072 Ashoj 4", "2072 Ashoj 3", "2072 Ashoj 2", "2072 Ashoj 1"],
+    "correct": 1,
+    "explanation": "The Constitution of Nepal was promulgated on 2072 Ashoj 3 (September 20, 2015)."
+  },
+  {
+    "id": 1020,
+    "subject": "Computer & IT",
+    "question": "Who is known as the 'Father of Computer'?",
+    "options": ["Charles Babbage", "Bill Gates", "Mark Zuckerberg", "John von Neumann"],
+    "correct": 0,
+    "explanation": "Charles Babbage conceptualized and invented the first mechanical computer (Analytical Engine)."
+  },
+  {
+    "id": 1021,
+    "subject": "Computer & IT",
+    "question": "Which of the following is NOT an output device?",
+    "options": ["OCR", "Plotter", "Monitor", "Printer"],
+    "correct": 0,
+    "explanation": "OCR (Optical Character Reader) is an input device used to convert scanned text into machine-encoded text."
+  },
+  {
+    "id": 1022,
+    "subject": "Computer & IT",
+    "question": "How many bits are equal to one Byte?",
+    "options": ["4", "16", "8", "32"],
+    "correct": 2,
+    "explanation": "1 Byte = 8 bits."
+  },
+  {
+    "id": 1023,
+    "subject": "Computer & IT",
+    "question": "In computer terminology, what does 'OS' stand for?",
+    "options": ["Order Significance", "Open Software", "Operating System", "Optical Sensor"],
+    "correct": 2,
+    "explanation": "OS stands for Operating System."
+  },
+  {
+    "id": 1024,
+    "subject": "Computer & IT",
+    "question": "Which of the following is NOT a part of the internet?",
+    "options": ["WWW", "E-mail", "CDROM", "HTTP"],
+    "correct": 2,
+    "explanation": "CDROM is an offline physical optical storage media, not part of internet protocols."
+  }
+]
