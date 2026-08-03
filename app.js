@@ -11009,6 +11009,14 @@ function filterPracticeQuestions() {
         matched = [...state.questions];
     }
 
+    const seenQuestions = new Set();
+    matched = matched.filter(q => {
+        const key = String(q.question || '').trim().toLowerCase();
+        if (seenQuestions.has(key)) return false;
+        seenQuestions.add(key);
+        return true;
+    });
+
     // Always randomize question order in practice mode
     state.practice.filteredQuestions = shuffleArray(matched);
 
@@ -11233,14 +11241,24 @@ function updateMockFormatInfo() {
 function buildMockExam(fmt) {
     const sections = [];
     const questions = [];
+    const seenQuestions = new Set();
 
     fmt.sections.forEach(section => {
         const start = questions.length;
         const pool = shuffleArray(state.questions.filter(q =>
             (q.subject || '').trim().toLowerCase() === section.key.trim().toLowerCase()
         ));
-        const picked = pool.slice(0, section.count);
-        picked.forEach(q => questions.push(q));
+
+        let pickedCount = 0;
+        for (let i = 0; i < pool.length && pickedCount < section.count; i++) {
+            const q = pool[i];
+            const key = String(q.question || '').trim().toLowerCase();
+            if (seenQuestions.has(key)) continue;
+            seenQuestions.add(key);
+            questions.push(q);
+            pickedCount++;
+        }
+
         sections.push({
             key: section.key,
             label: section.label,
@@ -11254,6 +11272,9 @@ function buildMockExam(fmt) {
 }
 
 function initMockExamMode() {
+    if (initMockExamMode._done) return;
+    initMockExamMode._done = true;
+
     const startBtn = document.getElementById('startFullMockExamBtn');
     const submitBtn = document.getElementById('submitExamEarlyBtn');
     const retakeBtn = document.getElementById('retakeMockBtn');
@@ -11264,18 +11285,17 @@ function initMockExamMode() {
         retakeBtn.addEventListener('click', () => {
             document.getElementById('mockResultCard').classList.add('hidden');
             document.getElementById('mockWelcomeCard').classList.remove('hidden');
+            state.mock.userAnswers = {};
             const review = document.getElementById('mockReviewContainer');
             if (review) review.classList.add('hidden');
+            setReviewButtonState(false);
         });
     }
 
     document.getElementById('mockUnivTargetSelect')?.addEventListener('change', updateMockFormatInfo);
     updateMockFormatInfo();
 
-    document.getElementById('reviewAnswersBtn')?.addEventListener('click', () => {
-        const container = document.getElementById('mockReviewContainer');
-        if (container) container.classList.toggle('hidden');
-    });
+    document.getElementById('reviewAnswersBtn')?.addEventListener('click', toggleMockReview);
 
     document.getElementById('mockPrevBtn')?.addEventListener('click', () => {
         if (state.mock.currentIndex > 0) {
@@ -11292,6 +11312,32 @@ function initMockExamMode() {
             renderMockQuestion();
         }
     });
+}
+
+function toggleMockReview() {
+    const container = document.getElementById('mockReviewContainer');
+    if (!container) return;
+
+    const isHidden = container.classList.contains('hidden');
+    if (isHidden) {
+        renderMockReview();
+        container.classList.remove('hidden');
+        setReviewButtonState(true);
+        setTimeout(() => container.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
+    } else {
+        container.classList.add('hidden');
+        setReviewButtonState(false);
+    }
+}
+
+function setReviewButtonState(open) {
+    const btn = document.getElementById('reviewAnswersBtn');
+    if (!btn) return;
+    btn.dataset.reviewOpen = open ? '1' : '0';
+    const icon = btn.querySelector('i');
+    const label = btn.childNodes[btn.childNodes.length - 1];
+    if (icon) icon.className = open ? 'fa-solid fa-eye-slash' : 'fa-solid fa-eye';
+    if (label) label.textContent = open ? ' Hide Review' : ' Review Answers';
 }
 
 function syncMockSectionFromIndex() {
@@ -11316,6 +11362,10 @@ function startMockExam() {
 
     document.getElementById('mockWelcomeCard').classList.add('hidden');
     document.getElementById('mockActiveLayout').classList.remove('hidden');
+
+    const review = document.getElementById('mockReviewContainer');
+    if (review) review.classList.add('hidden');
+    setReviewButtonState(false);
 
     renderMockSectionTabs();
     renderMockPalette();
@@ -11554,26 +11604,41 @@ function renderMockReview() {
     if (!container) return;
     container.innerHTML = '';
 
-    let reviewCount = 0;
+    const total = state.mock.questions.length;
+    const answered = state.mock.questions.filter((_, idx) => state.mock.userAnswers[idx] !== undefined).length;
+
+    const heading = document.createElement('div');
+    heading.className = 'review-heading';
+    heading.innerHTML = `
+        <span class="review-heading-title"><i class="fa-solid fa-clipboard-list"></i> Answer Review</span>
+        <span class="review-count">${answered} answered of ${total} questions</span>
+    `;
+    container.appendChild(heading);
+
     state.mock.questions.forEach((q, idx) => {
         const userAns = state.mock.userAnswers[idx];
-        if (userAns === undefined || userAns === q.correct) return;
-        reviewCount++;
+        if (userAns === undefined) return;
+        if (!q || !Array.isArray(q.options)) return;
 
         const sec = state.mock.sections.find(s => idx >= s.start && idx < s.end);
         const secLabel = sec ? sec.label.replace('Section ', '').replace(' - ', ': ') : '';
 
-        const optionsHTML = q.options.map((opt, oi) => {
-            let cls = '';
-            if (oi === q.correct) cls = 'review-opt-correct';
-            else if (oi === userAns) cls = 'review-opt-wrong';
-            return `
-                <div class="review-opt ${cls}">
-                    <span class="opt-prefix">${String.fromCharCode(65 + oi)}</span>
-                    <span>${escapeHtml(opt)}</span>
-                </div>
-            `;
-        }).join('');
+        let optionsHTML = '';
+        try {
+            optionsHTML = q.options.map((opt, oi) => {
+                let cls = '';
+                if (oi === q.correct) cls = 'review-opt-correct';
+                else if (oi === userAns) cls = 'review-opt-wrong';
+                return `
+                    <div class="review-opt ${cls}">
+                        <span class="opt-prefix">${String.fromCharCode(65 + oi)}</span>
+                        <span>${escapeHtml(opt)}</span>
+                    </div>
+                `;
+            }).join('');
+        } catch (e) {
+            return;
+        }
 
         const card = document.createElement('div');
         card.className = 'review-card';
@@ -11589,8 +11654,9 @@ function renderMockReview() {
         container.appendChild(card);
     });
 
-    if (reviewCount === 0) {
-        container.innerHTML = '<p class="review-empty">No incorrect answers. Outstanding!</p>';
+    const shown = container.querySelectorAll('.review-card').length;
+    if (shown === 0) {
+        container.innerHTML = '<p class="review-empty">No answers to review yet. Finish the exam to see your answer review here.</p>';
     }
 }
 
