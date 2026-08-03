@@ -1,71 +1,137 @@
 [
   {
     "id": 1001,
+    "univ": "TU",
     "subject": "English",
+    "difficulty": "Easy",
     "question": "The danger of volcanoes .............. not to be taken lightly.",
-    "options": ["must", "might", "has", "have"],
+    "options": [
+      "must",
+      "might",
+      "has",
+      "have"
+    ],
     "correct": 0,
-    "explanation": "Must indicates strong obligation/necessity: 'must not be taken lightly'."
+    "explanation": "Must indicates strong obligation/necessity: 'must not be taken lightly'.",
+    "source": "TU BCA Official Model Paper 2018"
   },
   {
     "id": 1002,
+    "univ": "TU",
     "subject": "English",
+    "difficulty": "Easy",
     "question": "Ramesh ................ here for the last seven years.",
-    "options": ["worked", "is working", "has worked", "works"],
+    "options": [
+      "worked",
+      "is working",
+      "has worked",
+      "works"
+    ],
     "correct": 2,
-    "explanation": "Present perfect tense 'has worked' is used with time expressions like 'for the last seven years'."
+    "explanation": "Present perfect tense 'has worked' is used with time expressions like 'for the last seven years'.",
+    "source": "TU BCA Official Model Paper 2018"
   },
   {
     "id": 1003,
+    "univ": "TU",
     "subject": "English",
+    "difficulty": "Medium",
     "question": "Supply the correct tag: 'Let us go, ..............'",
-    "options": ["shall we?", "will we?", "do we?", "don't we?"],
+    "options": [
+      "shall we?",
+      "will we?",
+      "do we?",
+      "don't we?"
+    ],
     "correct": 0,
-    "explanation": "Imperative sentences beginning with 'Let us' take 'shall we?' as question tag."
+    "explanation": "Imperative sentences beginning with 'Let us' take 'shall we?' as question tag.",
+    "source": "TU BCA Official Model Paper 2018"
   },
   {
     "id": 1004,
+    "univ": "TU",
     "subject": "English",
+    "difficulty": "Easy",
     "question": "Two ladies had ............. hand bags stolen at the Kathmandu Mall.",
-    "options": ["its", "her", "their", "they"],
+    "options": [
+      "its",
+      "her",
+      "their",
+      "they"
+    ],
     "correct": 2,
-    "explanation": "Plural subject 'Two ladies' requires plural possessive pronoun 'their'."
+    "explanation": "Plural subject 'Two ladies' requires plural possessive pronoun 'their'.",
+    "source": "TU BCA Official Model Paper 2018"
   },
   {
     "id": 1005,
+    "univ": "TU",
     "subject": "English",
+    "difficulty": "Easy",
     "question": "Sincere people abide ............. their promise.",
-    "options": ["by", "of", "at", "on"],
+    "options": [
+      "by",
+      "of",
+      "at",
+      "on"
+    ],
     "correct": 0,
-    "explanation": "The idiom is 'abide by' meaning to accept or act in accordance with a rule or promise."
+    "explanation": "The idiom is 'abide by' meaning to accept or act in accordance with a rule or promise.",
+    "source": "TU BCA Official Model Paper 2018"
   },
   {
     "id": 1006,
+    "univ": "TU",
     "subject": "English",
+    "difficulty": "Medium",
     "question": "The new manager will ............ his position on August 30.",
-    "options": ["take off", "take out", "take over", "take after"],
+    "options": [
+      "take off",
+      "take out",
+      "take over",
+      "take after"
+    ],
     "correct": 2,
-    "explanation": "'Take over' means to assume control or responsibility of a position."
+    "explanation": "'Take over' means to assume control or responsibility of a position.",
+    "source": "TU BCA Official Model Paper 2018"
   },
   {
     "id": 1007,
+    "univ": "TU",
     "subject": "English",
+    "difficulty": "Easy",
     "question": "Choose the correct meaning of 'A Lion's share':",
-    "options": ["No share at all", "Greater share of a thing", "Very small part", "Little profit"],
+    "options": [
+      "No share at all",
+      "Greater share of a thing",
+      "Very small part",
+      "Little profit"
+    ],
     "correct": 1,
-    "explanation": "'A lion's share' refers to the major or largest portion of something."
+    "explanation": "'A lion's share' refers to the major or largest portion of something.",
+    "source": "TU BCA Official Model Paper 2018"
   },
   {
     "id": 1008,
+    "univ": "TU",
     "subject": "English",
+    "difficulty": "Medium",
     "question": "Neither of them ............ a problem.",
-    "options": ["anticipate", "anticipates", "have anticipated", "are anticipating"],
+    "options": [
+      "anticipate",
+      "anticipates",
+      "have anticipated",
+      "are anticipating"
+    ],
     "correct": 1,
-    "explanation": "'Neither' is singular and takes a singular verb ('anticipates')."
+    "explanation": "'Neither' is singular and takes a singular verb ('anticipates').",
+    "source": "TU BCA Official Model Paper 2018"
   },
   {
     "id": 1009,
+    "univ": "TU",
     "subject": "English",
+    "difficulty": "Medium",
     "question": "Choose the correct passive voice: 'We celebrate Democracy Day on Falgun seven.'",
     "options": [
       "Democracy Day is celebrated on Falgun seven by us.",
@@ -74,126 +140,3063 @@
       "Democracy Day had been celebrated on Falgun seven by us."
     ],
     "correct": 0,
-    "explanation": "Simple present tense in active voice changes to 'is + past participle' in passive voice."
+    "explanation": "Simple present tense in active voice changes to 'is + past participle' in passive voice.",
+    "source": "TU BCA Official Model Paper 2018"
   },
   {
     "id": 1010,
+    "univ": "TU",
     "subject": "English",
+    "difficulty": "Easy",
     "question": "That which cannot be divided is called:",
-    "options": ["Indelible", "Indivisible", "Insoluble", "Indefensible"],
+    "options": [
+      "Indelible",
+      "Indivisible",
+      "Insoluble",
+      "Indefensible"
+    ],
     "correct": 1,
-    "explanation": "Indivisible means unable to be divided into separate parts."
+    "explanation": "Indivisible means unable to be divided into separate parts.",
+    "source": "TU BCA Official Model Paper 2018"
   },
   {
     "id": 1011,
+    "univ": "TU",
     "subject": "Mathematics",
+    "difficulty": "Medium",
     "question": "A number divided by 10 gives a remainder 7. If the same number is divided by 5, what will be the remainder?",
-    "options": ["1", "2", "3", "4"],
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
     "correct": 1,
-    "explanation": "Number N = 10k + 7. Divided by 5: (10k + 7)/5 = 2k + 1 with remainder 2 (7 mod 5 = 2)."
+    "explanation": "Number N = 10k + 7. Divided by 5: (10k + 7)/5 = 2k + 1 with remainder 2 (7 mod 5 = 2).",
+    "source": "TU BCA Official Model Paper 2018"
   },
   {
     "id": 1012,
+    "univ": "TU",
     "subject": "Mathematics",
+    "difficulty": "Easy",
     "question": "Which value of 'n' gives a negative result for (n² - 15)?",
-    "options": ["7", "5", "3", "4"],
+    "options": [
+      "7",
+      "5",
+      "3",
+      "4"
+    ],
     "correct": 2,
-    "explanation": "For n = 3: 3² - 15 = 9 - 15 = -6 (negative)."
+    "explanation": "For n = 3: 3² - 15 = 9 - 15 = -6 (negative).",
+    "source": "TU BCA Official Model Paper 2018"
   },
   {
     "id": 1013,
+    "univ": "TU",
     "subject": "Mathematics",
+    "difficulty": "Easy",
     "question": "If 'n' is an integer, which of the following expressions must always be even?",
-    "options": ["n(n + 1)", "n² + 1", "n(n + 2)", "n(n + 4)"],
+    "options": [
+      "n(n + 1)",
+      "n² + 1",
+      "n(n + 2)",
+      "n(n + 4)"
+    ],
     "correct": 0,
-    "explanation": "n(n+1) is the product of two consecutive integers, one of which must be even. Hence, the product is always even."
+    "explanation": "n(n+1) is the product of two consecutive integers, one of which must be even. Hence, the product is always even.",
+    "source": "TU BCA Official Model Paper 2018"
   },
   {
     "id": 1014,
+    "univ": "TU",
     "subject": "Mathematics",
+    "difficulty": "Easy",
     "question": "What is the sum of the first five prime numbers?",
-    "options": ["18", "25", "26", "28"],
+    "options": [
+      "18",
+      "25",
+      "26",
+      "28"
+    ],
     "correct": 3,
-    "explanation": "First 5 prime numbers: 2 + 3 + 5 + 7 + 11 = 28."
+    "explanation": "First 5 prime numbers: 2 + 3 + 5 + 7 + 11 = 28.",
+    "source": "TU BCA Official Model Paper 2018"
   },
   {
     "id": 1015,
+    "univ": "TU",
     "subject": "Mathematics",
+    "difficulty": "Easy",
     "question": "If 6 is subtracted from the cube of a number and the result is 21, what is the number?",
-    "options": ["2", "3", "4", "5"],
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
     "correct": 1,
-    "explanation": "x³ - 6 = 21 => x³ = 27 => x = ∛27 = 3."
+    "explanation": "x³ - 6 = 21 => x³ = 27 => x = ∛27 = 3.",
+    "source": "TU BCA Official Model Paper 2018"
   },
   {
     "id": 1016,
+    "univ": "TU",
     "subject": "Mathematics",
+    "difficulty": "Medium",
     "question": "If the product of two consecutive even numbers is 288, what are the numbers?",
-    "options": ["14, 12", "14, 16", "16, 18", "22, 24"],
+    "options": [
+      "14, 12",
+      "14, 16",
+      "16, 18",
+      "22, 24"
+    ],
     "correct": 2,
-    "explanation": "16 * 18 = 288."
+    "explanation": "16 * 18 = 288.",
+    "source": "TU BCA Official Model Paper 2018"
   },
   {
     "id": 1017,
+    "univ": "TU",
     "subject": "Mathematics",
+    "difficulty": "Easy",
     "question": "If 6p + 6q = 36, what is the average value of p and q?",
-    "options": ["2", "3", "4", "5"],
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
     "correct": 1,
-    "explanation": "6(p + q) = 36 => p + q = 6. Average = (p + q) / 2 = 6 / 2 = 3."
+    "explanation": "6(p + q) = 36 => p + q = 6. Average = (p + q) / 2 = 6 / 2 = 3.",
+    "source": "TU BCA Official Model Paper 2018"
   },
   {
     "id": 1018,
+    "univ": "TU",
     "subject": "Mathematics",
+    "difficulty": "Medium",
     "question": "What is the slope of the line 2x - 4y = 9?",
-    "options": ["1", "1/2", "2", "3"],
+    "options": [
+      "1",
+      "1/2",
+      "2",
+      "3"
+    ],
     "correct": 1,
-    "explanation": "4y = 2x - 9 => y = (1/2)x - (9/4). Slope m = 1/2."
+    "explanation": "4y = 2x - 9 => y = (1/2)x - (9/4). Slope m = 1/2.",
+    "source": "TU BCA Official Model Paper 2018"
   },
   {
     "id": 1019,
+    "univ": "TU",
     "subject": "Computer & IT",
+    "difficulty": "Easy",
     "question": "When did the new constitution of Nepal 'Nepal Ko Sambidhan' come into effect?",
-    "options": ["2072 Ashoj 4", "2072 Ashoj 3", "2072 Ashoj 2", "2072 Ashoj 1"],
+    "options": [
+      "2072 Ashoj 4",
+      "2072 Ashoj 3",
+      "2072 Ashoj 2",
+      "2072 Ashoj 1"
+    ],
     "correct": 1,
-    "explanation": "The Constitution of Nepal was promulgated on 2072 Ashoj 3 (September 20, 2015)."
+    "explanation": "The Constitution of Nepal was promulgated on 2072 Ashoj 3 (September 20, 2015).",
+    "source": "Nepal GK & Entrance Question Bank"
   },
   {
     "id": 1020,
+    "univ": "TU",
     "subject": "Computer & IT",
+    "difficulty": "Easy",
     "question": "Who is known as the 'Father of Computer'?",
-    "options": ["Charles Babbage", "Bill Gates", "Mark Zuckerberg", "John von Neumann"],
+    "options": [
+      "Charles Babbage",
+      "Bill Gates",
+      "Mark Zuckerberg",
+      "John von Neumann"
+    ],
     "correct": 0,
-    "explanation": "Charles Babbage conceptualized and invented the first mechanical computer (Analytical Engine)."
+    "explanation": "Charles Babbage conceptualized and invented the first mechanical computer (Analytical Engine).",
+    "source": "Computer Pioneers & Fundamentals"
   },
   {
     "id": 1021,
+    "univ": "TU",
     "subject": "Computer & IT",
+    "difficulty": "Easy",
     "question": "Which of the following is NOT an output device?",
-    "options": ["OCR", "Plotter", "Monitor", "Printer"],
+    "options": [
+      "OCR",
+      "Plotter",
+      "Monitor",
+      "Printer"
+    ],
     "correct": 0,
-    "explanation": "OCR (Optical Character Reader) is an input device used to convert scanned text into machine-encoded text."
+    "explanation": "OCR (Optical Character Reader) is an input device used to convert scanned text into machine-encoded text.",
+    "source": "TU BCA Official Model Paper 2018"
   },
   {
     "id": 1022,
+    "univ": "TU",
     "subject": "Computer & IT",
+    "difficulty": "Easy",
     "question": "How many bits are equal to one Byte?",
-    "options": ["4", "16", "8", "32"],
+    "options": [
+      "4",
+      "16",
+      "8",
+      "32"
+    ],
     "correct": 2,
-    "explanation": "1 Byte = 8 bits."
+    "explanation": "1 Byte = 8 bits.",
+    "source": "TU BCA Official Model Paper 2018"
   },
   {
     "id": 1023,
+    "univ": "TU",
     "subject": "Computer & IT",
+    "difficulty": "Easy",
     "question": "In computer terminology, what does 'OS' stand for?",
-    "options": ["Order Significance", "Open Software", "Operating System", "Optical Sensor"],
+    "options": [
+      "Order Significance",
+      "Open Software",
+      "Operating System",
+      "Optical Sensor"
+    ],
     "correct": 2,
-    "explanation": "OS stands for Operating System."
+    "explanation": "OS stands for Operating System.",
+    "source": "TU BCA Official Model Paper 2018"
   },
   {
     "id": 1024,
+    "univ": "TU",
     "subject": "Computer & IT",
+    "difficulty": "Easy",
     "question": "Which of the following is NOT a part of the internet?",
-    "options": ["WWW", "E-mail", "CDROM", "HTTP"],
+    "options": [
+      "WWW",
+      "E-mail",
+      "CDROM",
+      "HTTP"
+    ],
     "correct": 2,
-    "explanation": "CDROM is an offline physical optical storage media, not part of internet protocols."
+    "explanation": "CDROM is an offline physical optical storage media, not part of internet protocols.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1101,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Easy",
+    "question": "They are as lucky as .............",
+    "options": [
+      "we",
+      "our",
+      "ourselves",
+      "us"
+    ],
+    "correct": 0,
+    "explanation": "In formal English, a subject pronoun ('we') follows 'as...as' in comparison.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1102,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "There is someone in the room ............. I certainly heard a great noise.",
+    "options": [
+      "and",
+      "but",
+      "for",
+      "so"
+    ],
+    "correct": 2,
+    "explanation": "'For' introduces a reason: the noise is the reason the speaker believes someone is there.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1103,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Easy",
+    "question": "She is ............. obedient student.",
+    "options": [
+      "an",
+      "a",
+      "the",
+      "none of the above"
+    ],
+    "correct": 0,
+    "explanation": "'Obedient' begins with a vowel sound, so the indefinite article 'an' is used.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1104,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Easy",
+    "question": "I don't think I ............. be able to go.",
+    "options": [
+      "will",
+      "should",
+      "can",
+      "could"
+    ],
+    "correct": 0,
+    "explanation": "'Will' expresses simple future intention: 'I don't think I will be able to go.'",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1105,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Easy",
+    "question": "Which of the following words is an abstract noun?",
+    "options": [
+      "desk",
+      "fear",
+      "class",
+      "needle"
+    ],
+    "correct": 1,
+    "explanation": "'Fear' is an idea/emotion (abstract noun); the others are concrete nouns.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1106,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "Which of the following words does NOT have a suffix?",
+    "options": [
+      "helpless",
+      "goodness",
+      "fearless",
+      "courage"
+    ],
+    "correct": 3,
+    "explanation": "Helpless (-less), goodness (-ness) and fearless (-less) have suffixes; 'courage' is a root word.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1107,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Easy",
+    "question": "The opposite meaning of 'accepted' is:",
+    "options": [
+      "liked",
+      "noted",
+      "provided",
+      "rejected"
+    ],
+    "correct": 3,
+    "explanation": "'Rejected' is the opposite (antonym) of 'accepted'.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1108,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "Choose the word nearest in meaning to 'emulate':",
+    "options": [
+      "Imitate",
+      "Deny",
+      "Discuss",
+      "Reject"
+    ],
+    "correct": 0,
+    "explanation": "'Emulate' means to imitate or match the example of another.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1109,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Easy",
+    "question": "Choose the correct synonym for the underlined word: 'Raman is a versatile boy.'",
+    "options": [
+      "bad",
+      "clumsy",
+      "gifted",
+      "lazy"
+    ],
+    "correct": 2,
+    "explanation": "'Versatile' means having many skills; 'gifted' is the closest synonym.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1110,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "Select the correct antonym for 'segregation':",
+    "options": [
+      "appreciation",
+      "integration",
+      "cohesion",
+      "co-ordination"
+    ],
+    "correct": 1,
+    "explanation": "'Segregation' (separation) is opposite to 'integration' (bringing together).",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1111,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Easy",
+    "question": "Fill in the gap: 'The price of consumer goods ............. increasing.'",
+    "options": [
+      "are",
+      "is",
+      "were",
+      "has been"
+    ],
+    "correct": 1,
+    "explanation": "The subject 'price' is singular, so the singular verb 'is' is correct.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1112,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "Which of the following sentences is INCORRECT in terms of subject-verb agreement?",
+    "options": [
+      "Each of the women owns her home.",
+      "All of the women own their own homes.",
+      "Here are two wrenches and a hammer.",
+      "Here is a hammer and two wrenches."
+    ],
+    "correct": 3,
+    "explanation": "With two subjects joined, the verb should be plural: 'Here are a hammer and two wrenches.'",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1113,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "Which of the following sentences has the correct use of comma (,)?",
+    "options": [
+      "June 27, 2018, is a day I will never forget.",
+      "Some people who go to school, enjoy the social life.",
+      "He was late for dinner, we decided to eat without him.",
+      "We were glad to see him, because he had brought gifts."
+    ],
+    "correct": 0,
+    "explanation": "Dates are written 'Month day, year,' with a comma after the year.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1114,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Easy",
+    "question": "Choose the past participle of the verb 'quit':",
+    "options": [
+      "quited",
+      "quit",
+      "quitting",
+      "has quit"
+    ],
+    "correct": 1,
+    "explanation": "'Quit' is an irregular verb: quit - quit - quit.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1115,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Easy",
+    "question": "Choose the correct alternative: 'We spent a ............. evening together.'",
+    "options": [
+      "quite",
+      "quit",
+      "quiet",
+      "quitter"
+    ],
+    "correct": 2,
+    "explanation": "'Quiet' (peaceful) fits the context; 'quite' is an adverb meaning 'very'.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1116,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Easy",
+    "question": "Which of the following words needs capitalization?",
+    "options": [
+      "winter",
+      "ocean",
+      "jewish",
+      "university"
+    ],
+    "correct": 2,
+    "explanation": "'Jewish' is a proper adjective derived from a nationality and must be capitalized.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1117,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "Choose the correct preposition: 'He is involved ............. cheating.'",
+    "options": [
+      "for",
+      "of",
+      "on",
+      "in"
+    ],
+    "correct": 3,
+    "explanation": "The correct expression is 'involved in cheating'.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1118,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Easy",
+    "question": "Select the correct preposition: 'He is coming here ............. six o'clock.'",
+    "options": [
+      "upon",
+      "on",
+      "at",
+      "to"
+    ],
+    "correct": 2,
+    "explanation": "'At' is used for specific times: 'at six o'clock.'",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1119,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "Select the correct meaning of the idiom 'In the good book of':",
+    "options": [
+      "enjoying a pleasant moment",
+      "enjoying a favour of someone",
+      "possessing a good book for reading",
+      "purchasing a good book"
+    ],
+    "correct": 1,
+    "explanation": "'In the good books of someone' means being in someone's favour.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1120,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Easy",
+    "question": "Fill in the gap: 'I am ............. tired to go any further.'",
+    "options": [
+      "to",
+      "too",
+      "so",
+      "not"
+    ],
+    "correct": 1,
+    "explanation": "'Too + adjective + to-infinitive' shows excess: 'too tired to go'.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1121,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "Which is the correct indirect speech for: Hari says, 'I am very happy.'?",
+    "options": [
+      "Hari says he is very happy.",
+      "Hari says he was very happy.",
+      "Hari said he is very happy.",
+      "Hari said he was very happy."
+    ],
+    "correct": 0,
+    "explanation": "With a present-tense reporting verb ('says'), the tense of the reported clause stays unchanged.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1122,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Easy",
+    "question": "Select the interrogative sentence from the options below:",
+    "options": [
+      "Shall I see you tomorrow?",
+      "He has studied English for a long time.",
+      "They won't believe you.",
+      "It will be dark soon."
+    ],
+    "correct": 0,
+    "explanation": "'Shall I see you tomorrow?' is the only question (interrogative) form.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1123,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "Put the correct verb form: 'I ............. told you earlier if I had known.'",
+    "options": [
+      "would",
+      "would have",
+      "had",
+      "should"
+    ],
+    "correct": 1,
+    "explanation": "Third conditional: 'would have + past participle' expresses an unreal past.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1124,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "Choose the right pronoun: 'If everybody does ............. part, the game should go smoothly.'",
+    "options": [
+      "his",
+      "her",
+      "his or her",
+      "their"
+    ],
+    "correct": 2,
+    "explanation": "'Everybody' is singular; the formal inclusive pronoun 'his or her' is used.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1125,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Easy",
+    "question": "Which of the following words is an adverb?",
+    "options": [
+      "good",
+      "bad",
+      "well",
+      "melt"
+    ],
+    "correct": 2,
+    "explanation": "'Well' is the adverb form corresponding to the adjective 'good'.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1126,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "Passage: Which of the following is the same in meaning as the word 'obliterate' used in the passage?",
+    "options": [
+      "Wipe out",
+      "Wipe off",
+      "Very Literate",
+      "Remove"
+    ],
+    "correct": 0,
+    "explanation": "In the passage, 'obliterate disease' means to wipe out or destroy disease completely.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1127,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "Passage: Which option gives the reason for progress in genetic engineering?",
+    "options": [
+      "Poor countries need genetic information.",
+      "It has become a popular subject.",
+      "Economically and scientifically advanced countries can provide infrastructure for such research.",
+      "Human beings are interrelated in heredity."
+    ],
+    "correct": 2,
+    "explanation": "The passage says advanced countries (USA, UK, Japan) provide the technology to reduce costs.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1128,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "Passage: According to the passage, the question of abortion is:",
+    "options": [
+      "hotly debated",
+      "ignored",
+      "unanswered",
+      "undecided"
+    ],
+    "correct": 0,
+    "explanation": "The passage states the application of genetic info to deciding sex/abortion 'is now hotly debated on ethical lines'.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1129,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "Passage: Which of the following is NOT true about genetic engineering?",
+    "options": [
+      "Acquired ability to detect disorder in unborn babies.",
+      "Possibility of abuse.",
+      "Increased tendency to manipulate gene cells.",
+      "Acquired ability to manipulate tissue cells."
+    ],
+    "correct": 2,
+    "explanation": "The passage mentions manipulating tissue cells but not an 'increased tendency to manipulate gene cells'.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1130,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "Passage: According to the author, the present state of knowledge about heredity has made geneticists:",
+    "options": [
+      "reckless",
+      "optimistic",
+      "introspective",
+      "arrogant"
+    ],
+    "correct": 1,
+    "explanation": "The passage says scientists are 'optimistic' and hold out hope for future success.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1131,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "If you save 1 paisa today, 2 paise next day, 4 paise the succeeding day and so on, what is the total saving at the end of a week?",
+    "options": [
+      "127 paisa",
+      "64 paisa",
+      "256 paisa",
+      "128 paisa"
+    ],
+    "correct": 0,
+    "explanation": "Sum of a GP: 1+2+4+8+16+32+64 = 2^7 - 1 = 127 paisa.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1132,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "What is the value of the sum of (n/n) for n = 1 to 10?",
+    "options": [
+      "0",
+      "-1",
+      "1",
+      "10"
+    ],
+    "correct": 3,
+    "explanation": "n/n = 1 for every term; 10 terms give 1 × 10 = 10.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1133,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "The total of the ages of A and B is in the ratio 3:5. If B is 8 years elder to A, what is the age of A?",
+    "options": [
+      "12 yrs.",
+      "15 yrs.",
+      "18 yrs.",
+      "21 yrs."
+    ],
+    "correct": 0,
+    "explanation": "A = 3x, B = 5x, and 5x - 3x = 8 → x = 4, so A = 12 yrs.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1134,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "If one root of the equation x² - 6x + c = 0 is 3, what is the value of c?",
+    "options": [
+      "3",
+      "6",
+      "8",
+      "9"
+    ],
+    "correct": 3,
+    "explanation": "Substitute x = 3: 9 - 18 + c = 0 → c = 9.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1135,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "Which one of the following is true for the roots of the equation x² - 8x + 16 = 0?",
+    "options": [
+      "imaginary & unequal",
+      "rational & unequal",
+      "real & equal",
+      "real & unequal"
+    ],
+    "correct": 2,
+    "explanation": "x² - 8x + 16 = (x - 4)², so the roots are real and equal (4, 4).",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1136,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "If a matrix is of order 5 × 3, how many elements are in a single column?",
+    "options": [
+      "5",
+      "3",
+      "4",
+      "15"
+    ],
+    "correct": 0,
+    "explanation": "A 5 × 3 matrix has 5 rows and 3 columns; each column contains 5 elements.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1137,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "If x - 5 = 1, what is the value of x + 7?",
+    "options": [
+      "5",
+      "7",
+      "8",
+      "13"
+    ],
+    "correct": 3,
+    "explanation": "x = 6, so x + 7 = 13.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1138,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "If 5x + 13 = 31, what is the value of √(31 + 5x)?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct": 2,
+    "explanation": "5x = 18, so 31 + 5x = 49 and √49 = 7.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1139,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "What is the correct value of 5³ / 5⁴?",
+    "options": [
+      "5³",
+      "1/5",
+      "5⁴",
+      "4/5"
+    ],
+    "correct": 1,
+    "explanation": "5³ / 5⁴ = 5^(3-4) = 5⁻¹ = 1/5.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1140,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Hard",
+    "question": "If a^x = b, b^y = c and c^z = a, what is the value of xyz?",
+    "options": [
+      "c",
+      "a",
+      "b",
+      "1"
+    ],
+    "correct": 3,
+    "explanation": "xyz = 1 (multiplying the three equations gives a^(xyz) = a).",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1141,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "If p + q = r, what is the average value of p, q and r?",
+    "options": [
+      "r/3",
+      "(p + q)/3",
+      "2r/3",
+      "r/2"
+    ],
+    "correct": 2,
+    "explanation": "Average = (p + q + r)/3 = (r + r)/3 = 2r/3.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1142,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "Which one of the following is correct for the acute angles of a right-angled triangle?",
+    "options": [
+      "complementary",
+      "supplementary",
+      "adjacent",
+      "equal"
+    ],
+    "correct": 0,
+    "explanation": "The two acute angles of a right triangle add to 90°, so they are complementary.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1143,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "There are 60 students in a class. If 60% of them are girls, how many boys are in the class?",
+    "options": [
+      "24",
+      "36",
+      "18",
+      "40"
+    ],
+    "correct": 0,
+    "explanation": "Boys = 40% of 60 = 24.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1144,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "Last year Hari was 4 feet tall and this year he is 5 feet tall. What is the percent increase of his height?",
+    "options": [
+      "10%",
+      "15%",
+      "20%",
+      "25%"
+    ],
+    "correct": 3,
+    "explanation": "Increase = 1 ft; 1/4 × 100 = 25%.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1145,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "What is the difference between 3/5 of 80 and 30% of 80?",
+    "options": [
+      "12",
+      "18",
+      "24",
+      "20"
+    ],
+    "correct": 2,
+    "explanation": "3/5 of 80 = 48 and 30% of 80 = 24; difference = 24.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1146,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "The cost of 6 pens is equal to the cost of 10 pencils. If 4 pencils cost Rs. 120, what is the cost of 4 pens?",
+    "options": [
+      "100",
+      "200",
+      "300",
+      "400"
+    ],
+    "correct": 1,
+    "explanation": "1 pencil = Rs. 30, so 10 pencils = Rs. 300 = 6 pens → 1 pen = Rs. 50 → 4 pens = Rs. 200.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1147,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "If the cost of 7 kg sugar is Rs. 210, how much sugar can be purchased for Rs. 330?",
+    "options": [
+      "11kg",
+      "12kg",
+      "13kg",
+      "14kg"
+    ],
+    "correct": 0,
+    "explanation": "1 kg costs Rs. 30; Rs. 330 buys 11 kg.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1148,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "Ganga can read 48 pages per hour. At this rate, how many pages can she read in 80 minutes?",
+    "options": [
+      "60",
+      "72",
+      "48",
+      "64"
+    ],
+    "correct": 3,
+    "explanation": "48 × (80/60) = 48 × 4/3 = 64 pages.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1149,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "Two numbers are in the ratio 6:7 and their sum is 117. What are these numbers?",
+    "options": [
+      "56, 58",
+      "63, 54",
+      "54, 63",
+      "48, 56"
+    ],
+    "correct": 2,
+    "explanation": "6x + 7x = 13x = 117 → x = 9 → numbers are 54 and 63.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1150,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "If 5:7 = 15:x, what is the value of x?",
+    "options": [
+      "18",
+      "21",
+      "24",
+      "35"
+    ],
+    "correct": 1,
+    "explanation": "5/7 = 15/x → x = (15 × 7)/5 = 21.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1151,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "If the cost price of 8 pens equals the selling price of 10 pens, what is the loss percentage?",
+    "options": [
+      "20%",
+      "15%",
+      "10%",
+      "25%"
+    ],
+    "correct": 0,
+    "explanation": "CP/SP = 10/8 → loss = 2/10 = 20%.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1152,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "If a 20% discount is given on a computer book costing Rs. 300, what will be the selling price?",
+    "options": [
+      "Rs. 240",
+      "Rs. 220",
+      "Rs. 260",
+      "Rs. 250"
+    ],
+    "correct": 0,
+    "explanation": "Selling price = 80% of 300 = Rs. 240.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1153,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "A watch is bought at Rs. 250 and sold at Rs. 300. What is the profit percentage?",
+    "options": [
+      "10%",
+      "15%",
+      "20%",
+      "25%"
+    ],
+    "correct": 2,
+    "explanation": "Profit = Rs. 50; 50/250 × 100 = 20%.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1154,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "What is the population doubling time if the population growth rate is 2% per annum?",
+    "options": [
+      "60 yrs.",
+      "50 yrs.",
+      "40 yrs.",
+      "30 yrs."
+    ],
+    "correct": 1,
+    "explanation": "Using simple interest: T = 100/R = 100/2 = 50 years.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1155,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "What is the rate percent per annum at which a sum of money trebles itself in 25 years?",
+    "options": [
+      "2%",
+      "4%",
+      "6%",
+      "8%"
+    ],
+    "correct": 3,
+    "explanation": "SI: R = 100 × (n - 1)/T = 100 × 2/25 = 8%.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1156,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "What is the cardinal number of the vowel set V = {a, e, i, o, u}?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correct": 1,
+    "explanation": "The set has 5 elements, so its cardinal number is 5.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1157,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Hard",
+    "question": "What is the minimum value of n(P∩Q) when n(U) = 100, n(P) = 70 and n(Q) = 45?",
+    "options": [
+      "15",
+      "55",
+      "30",
+      "45"
+    ],
+    "correct": 0,
+    "explanation": "n(P∩Q) ≥ n(P) + n(Q) - n(U) = 70 + 45 - 100 = 15.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1158,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "Which one of the following is true for a prime number?",
+    "options": [
+      "no factors",
+      "only one factor",
+      "only two factors",
+      "more than two factors"
+    ],
+    "correct": 2,
+    "explanation": "A prime number has exactly two factors: 1 and itself.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1159,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "Which interval notation is correct for {x : 5 ≤ x ≤ 15}?",
+    "options": [
+      "[5, ∞]",
+      "[∞, 15]",
+      "[6, 14]",
+      "[5, 15]"
+    ],
+    "correct": 3,
+    "explanation": "A closed interval including both 5 and 15 is written [5, 15].",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1160,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "What is the value of x when it is multiplied by 6 and added to 3 times itself gives 63?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "correct": 1,
+    "explanation": "6x + 3x = 9x = 63 → x = 7.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1161,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "What is the value of 2(5 + 5)?",
+    "options": [
+      "20",
+      "25",
+      "10",
+      "60"
+    ],
+    "correct": 0,
+    "explanation": "2 × (5 + 5) = 2 × 10 = 20.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1162,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "What is the number of seconds in 1⅓ hours?",
+    "options": [
+      "1200 sec",
+      "2400 sec",
+      "3600 sec",
+      "4800 sec"
+    ],
+    "correct": 3,
+    "explanation": "4/3 hours × 3600 = 4800 seconds.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1163,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Hard",
+    "question": "In a kilometer race A beats B by 100 meters and B beats C by 150 meters. In the same race, by how many meters does A beat C?",
+    "options": [
+      "150 m",
+      "100 m",
+      "250 m",
+      "200 m"
+    ],
+    "correct": 2,
+    "explanation": "A beats B by 100 m and B beats C by 150 m, so A beats C by 100 + 150 = 250 m (per the model key).",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1164,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "The area of the 4 walls of a square room is 120 m². If the height is 5 m, what is the area of its floor?",
+    "options": [
+      "26 m²",
+      "56 m²",
+      "25 m²",
+      "36 m²"
+    ],
+    "correct": 3,
+    "explanation": "4 × (side × 5) = 120 → side = 6 m → floor area = 36 m².",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1165,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "What is the probability of death?",
+    "options": [
+      "1",
+      "1/2",
+      "0",
+      "∞"
+    ],
+    "correct": 0,
+    "explanation": "Death is certain for everyone, so the probability is 1.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1166,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "What is the chance that a pregnant lady gives birth on a Tuesday?",
+    "options": [
+      "3/7",
+      "1/7",
+      "1",
+      "1/2"
+    ],
+    "correct": 1,
+    "explanation": "There are 7 equally likely days in a week, so the chance is 1/7.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1167,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "If BACHELOR is written as 12345678, how will BCA be written?",
+    "options": [
+      "123",
+      "432",
+      "147",
+      "132"
+    ],
+    "correct": 3,
+    "explanation": "B = 1, C = 3, A = 2, so BCA = 132.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1168,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "Which one of the following is the missing alphabet in the given table? (T Q N / P O S / M ? R)",
+    "options": [
+      "L",
+      "U",
+      "S",
+      "V"
+    ],
+    "correct": 1,
+    "explanation": "With U: row sums become 51, 50, 52 (consecutive) and column sums 49, 51, 53 (consecutive odd numbers).",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1169,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "Saru ranks 8th from the top and 20th from the bottom in her class. How many students are there in the classroom?",
+    "options": [
+      "28",
+      "27",
+      "20",
+      "29"
+    ],
+    "correct": 1,
+    "explanation": "Total = 8 + 20 - 1 = 27 (Saru is counted twice).",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1170,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "Find the value of x in the series: 1, 1, 2, 3, 5, 8, 13, x",
+    "options": [
+      "21",
+      "22",
+      "23",
+      "20"
+    ],
+    "correct": 0,
+    "explanation": "Fibonacci series: each term is the sum of the previous two; 8 + 13 = 21.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1171,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "How many squares are there in the following figure?",
+    "options": [
+      "13",
+      "14",
+      "15",
+      "16"
+    ],
+    "correct": 2,
+    "explanation": "The figure contains 9 small squares, 4 medium squares and 2 large squares = 15 squares total.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1172,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "What is the value of cos 0°?",
+    "options": [
+      "1/2",
+      "1/2",
+      "0",
+      "1"
+    ],
+    "correct": 3,
+    "explanation": "cos 0° = 1.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1173,
+    "univ": "TU",
+    "subject": "Computer & IT",
+    "difficulty": "Easy",
+    "question": "Which one of the following disciplines is NOT awarded by the Nobel Prize?",
+    "options": [
+      "Literature",
+      "Economics",
+      "Physics",
+      "Computer Science"
+    ],
+    "correct": 3,
+    "explanation": "There is no Nobel Prize in Computer Science.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1174,
+    "univ": "TU",
+    "subject": "Computer & IT",
+    "difficulty": "Medium",
+    "question": "Which one of the following belongs to SSD?",
+    "options": [
+      "RAM",
+      "ROM",
+      "Cache Memory",
+      "Mass Storage"
+    ],
+    "correct": 3,
+    "explanation": "SSD (Solid State Drive) is a mass/secondary storage device.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1175,
+    "univ": "TU",
+    "subject": "Computer & IT",
+    "difficulty": "Easy",
+    "question": "Who won the FIFA World Cup 2018 held in Russia?",
+    "options": [
+      "England",
+      "Croatia",
+      "France",
+      "Germany"
+    ],
+    "correct": 2,
+    "explanation": "France defeated Croatia 4-2 in the 2018 final.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1176,
+    "univ": "TU",
+    "subject": "Computer & IT",
+    "difficulty": "Easy",
+    "question": "What is the scientific name of human?",
+    "options": [
+      "Rana Tigrina",
+      "Homosepian",
+      "Felis Catus",
+      "Rattus"
+    ],
+    "correct": 1,
+    "explanation": "Homo sapiens (written 'Homosepian' in the paper) is the scientific name of humans.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1177,
+    "univ": "TU",
+    "subject": "Computer & IT",
+    "difficulty": "Medium",
+    "question": "Which one of the following is the deepest river of Nepal?",
+    "options": [
+      "Karnali",
+      "Koshi",
+      "Mahakali",
+      "Gandaki"
+    ],
+    "correct": 0,
+    "explanation": "The Karnali is generally considered the deepest river of Nepal.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1178,
+    "univ": "TU",
+    "subject": "Computer & IT",
+    "difficulty": "Medium",
+    "question": "Who was the first prime minister of Nepal?",
+    "options": [
+      "Janga Bahadur Rana",
+      "Matrika Prasad Koirala",
+      "Bhimsen Thapa",
+      "Mathabar Sing Thapa"
+    ],
+    "correct": 2,
+    "explanation": "Bhimsen Thapa is widely regarded as the first prime minister (Mukhtiyar) of Nepal.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1179,
+    "univ": "TU",
+    "subject": "Computer & IT",
+    "difficulty": "Easy",
+    "question": "Who is the writer of the Nepali novel 'Basain'?",
+    "options": [
+      "Lil Bahadur Kshetri",
+      "Ramlal Joshi",
+      "Gopal Prasad Rimal",
+      "Lokendra Bahadur Chand"
+    ],
+    "correct": 0,
+    "explanation": "'Basain' was written by Lil Bahadur Kshetri.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1180,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "When did you ............. on the last stage of your journey?",
+    "options": [
+      "set to",
+      "set out",
+      "set up",
+      "set off"
+    ],
+    "correct": 1,
+    "explanation": "'Set out' means to begin a journey.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1181,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "Jenny always ............. when you least expected her.",
+    "options": [
+      "showed up",
+      "shut up",
+      "showed off",
+      "shut down"
+    ],
+    "correct": 0,
+    "explanation": "'Show up' means to appear or arrive.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1182,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "It is a 14 hour flight, so it will give me a chance to ............. my reading.",
+    "options": [
+      "catch up on",
+      "catch on",
+      "catch up with",
+      "catch out"
+    ],
+    "correct": 0,
+    "explanation": "'Catch up on' means to do something that has been delayed, like reading.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1183,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "Mrs. MacDonald is having the old cottage .............",
+    "options": [
+      "do for something",
+      "do without",
+      "do over",
+      "do with"
+    ],
+    "correct": 2,
+    "explanation": "'Do over' means to renovate or redecorate.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1184,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "The new commercial ............. very well.",
+    "options": [
+      "gets away",
+      "gets across",
+      "gets about",
+      "gets along"
+    ],
+    "correct": 1,
+    "explanation": "'Get across' means to communicate a message effectively.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1185,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "I'm still trying to ............. a common cold.",
+    "options": [
+      "shake off",
+      "shake up",
+      "shack up",
+      "show off"
+    ],
+    "correct": 0,
+    "explanation": "'Shake off' means to get rid of an illness.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1186,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "Take up a brisk walk to ............. a good appetite.",
+    "options": [
+      "work out",
+      "work up",
+      "wrap up",
+      "write off"
+    ],
+    "correct": 1,
+    "explanation": "'Work up an appetite' means to develop a good appetite through activity.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1187,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Easy",
+    "question": "The synonym of 'ameliorate' is:",
+    "options": [
+      "finish",
+      "appreciate",
+      "improve",
+      "affluent"
+    ],
+    "correct": 2,
+    "explanation": "'Ameliorate' means to make better, i.e. improve.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1188,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "Which one is the appropriate synonym of 'squalor'?",
+    "options": [
+      "miser",
+      "indolent",
+      "hinder",
+      "shabby"
+    ],
+    "correct": 3,
+    "explanation": "'Squalor' means filthy, dirty and shabby condition.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1189,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "Give an exact synonym of 'hallowed':",
+    "options": [
+      "mellowed",
+      "sacred",
+      "decayed",
+      "mixed"
+    ],
+    "correct": 1,
+    "explanation": "'Hallowed' means holy or sacred.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1190,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "The antonym of 'cynical' is:",
+    "options": [
+      "rustic",
+      "friendly",
+      "hostile",
+      "simple"
+    ],
+    "correct": 1,
+    "explanation": "'Cynical' (distrustful, mocking) is opposite to 'friendly'.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1191,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Easy",
+    "question": "Give the antonym of 'corpulent':",
+    "options": [
+      "bulky",
+      "skinny",
+      "obese",
+      "fat"
+    ],
+    "correct": 1,
+    "explanation": "'Corpulent' means fat; the opposite is 'skinny'.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1192,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Easy",
+    "question": "Killing of one's sister is called .............",
+    "options": [
+      "regicide",
+      "genocide",
+      "sororicide",
+      "suicide"
+    ],
+    "correct": 2,
+    "explanation": "Sororicide is the killing of one's own sister.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1193,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Easy",
+    "question": "Killing of a snake is called:",
+    "options": [
+      "apicide",
+      "avicide",
+      "herpeticide",
+      "filicide"
+    ],
+    "correct": 2,
+    "explanation": "Herpeticide is the killing of reptiles such as snakes.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1194,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Easy",
+    "question": "Badminton is played on a court whereas boxing is played in a .............",
+    "options": [
+      "court",
+      "track",
+      "ring",
+      "arena"
+    ],
+    "correct": 2,
+    "explanation": "Boxing is played in a ring.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1195,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Easy",
+    "question": "A nun lives in a ............. whereas a hermit lives in a .............",
+    "options": [
+      "prison, sty",
+      "convent, hermitage",
+      "asylum, stable",
+      "cottage, inn"
+    ],
+    "correct": 1,
+    "explanation": "A nun lives in a convent and a hermit lives in a hermitage.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1196,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "The bell ............. but bracelets jingle.",
+    "options": [
+      "tolls",
+      "jingles",
+      "whistles",
+      "rattles"
+    ],
+    "correct": 0,
+    "explanation": "'Toll' is the sound made by a bell, while bracelets 'jingle'.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1197,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "What is the opposite of 'pompous'?",
+    "options": [
+      "humble",
+      "rough",
+      "cheap",
+      "unique"
+    ],
+    "correct": 0,
+    "explanation": "'Pompous' (arrogant, grand) is the opposite of 'humble'.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1198,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "One who abandons his religious faith is a/an .............",
+    "options": [
+      "apostate",
+      "atheist",
+      "secular",
+      "credulous"
+    ],
+    "correct": 0,
+    "explanation": "An apostate abandons his religious faith.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1199,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "Repetition or writing word for word is putting it .............",
+    "options": [
+      "pedantic",
+      "extempore",
+      "epilogue",
+      "verbatim"
+    ],
+    "correct": 3,
+    "explanation": "'Verbatim' means word for word.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1200,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Easy",
+    "question": "Johnson died ............. cancer.",
+    "options": [
+      "by",
+      "in",
+      "of",
+      "from"
+    ],
+    "correct": 2,
+    "explanation": "The correct preposition is 'die of' an illness: 'died of cancer.'",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1201,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Easy",
+    "question": "I hope you will agree ............. me on this issue.",
+    "options": [
+      "to",
+      "on",
+      "with",
+      "for"
+    ],
+    "correct": 2,
+    "explanation": "'Agree with someone' is the correct collocation.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1202,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "I am angry ............. your rude manner but not angry ............. you for not helping me.",
+    "options": [
+      "at, with",
+      "with, with",
+      "to, with",
+      "to, to"
+    ],
+    "correct": 0,
+    "explanation": "'Angry at' a thing/manner and 'angry with' a person.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1203,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Easy",
+    "question": "I know you are looking ............. a job.",
+    "options": [
+      "for",
+      "at",
+      "with",
+      "by"
+    ],
+    "correct": 0,
+    "explanation": "'Look for' means to search for.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1204,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "This magazine is not useful ............. me as I have no taste in music debates.",
+    "options": [
+      "to",
+      "with",
+      "for",
+      "by"
+    ],
+    "correct": 0,
+    "explanation": "The correct phrase is 'useful to someone'.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1205,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "She was fined ............. parking her car in a no parking area.",
+    "options": [
+      "for",
+      "on",
+      "in",
+      "at"
+    ],
+    "correct": 0,
+    "explanation": "'Fined for' an offence is the correct expression.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1206,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Easy",
+    "question": "I'm interested in cricket but I'm not very good ............. it.",
+    "options": [
+      "in",
+      "with",
+      "at",
+      "about"
+    ],
+    "correct": 2,
+    "explanation": "'Good at' is the correct collocation.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1207,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "What is the meaning of the phrase 'ad interim'?",
+    "options": [
+      "at pleasure",
+      "at will",
+      "to the extreme",
+      "for the time being"
+    ],
+    "correct": 3,
+    "explanation": "'Ad interim' means for the time being.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1208,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "A government controlled by the rich is called:",
+    "options": [
+      "oligarchy",
+      "aristocracy",
+      "plutocracy",
+      "democracy"
+    ],
+    "correct": 2,
+    "explanation": "Plutocracy is government controlled by the wealthy.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1209,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "We must be early ............. we won't get a seat.",
+    "options": [
+      "otherwise",
+      "yet",
+      "however",
+      "but"
+    ],
+    "correct": 0,
+    "explanation": "'Otherwise' expresses the consequence: if not, we won't get a seat.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1210,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "'Work like a Trojan' means:",
+    "options": [
+      "treats",
+      "works",
+      "watches",
+      "sleeps"
+    ],
+    "correct": 1,
+    "explanation": "'Work like a Trojan' means to work very hard.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1211,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "'Fit like a glove' means:",
+    "options": [
+      "fits very well",
+      "loosely fits",
+      "matches",
+      "dresses"
+    ],
+    "correct": 0,
+    "explanation": "'Fit like a glove' means to fit perfectly.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1212,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "'Time will tell' means:",
+    "options": [
+      "no time left",
+      "old fashioned ideas",
+      "whether decisions or actions in the present were right or not",
+      "future will show"
+    ],
+    "correct": 3,
+    "explanation": "'Time will tell' means the future will show the result.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1213,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "A night in the town is full of .............",
+    "options": [
+      "tasks",
+      "green lights",
+      "fun and entertainment",
+      "creativity"
+    ],
+    "correct": 2,
+    "explanation": "A night out in the town is full of fun and entertainment.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1214,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "'Dressed up to the nines' means:",
+    "options": [
+      "very happy spirit",
+      "dressed in one's best clothes",
+      "a routine dress",
+      "a small chance to bring good luck"
+    ],
+    "correct": 1,
+    "explanation": "'Dressed up to the nines' means wearing one's finest clothes.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1215,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "Passage: The queen got annoyed because .............",
+    "options": [
+      "she had burnt her fingers.",
+      "she was not happy with the Sultan's statement about his own income.",
+      "the Sultan was busy copying the holy book.",
+      "of the Sultan's undue concern for her."
+    ],
+    "correct": 1,
+    "explanation": "The queen was annoyed when the Sultan said his income did not permit lavish spending.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1216,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "Passage: Why did Sultan Nasiruddin not use the money in the treasury for himself?",
+    "options": [
+      "He was afraid that his subjects would accuse him of theft.",
+      "He had already distributed the money to the poor.",
+      "He wanted to annoy his Begum.",
+      "He was convinced that the money belonged to the people."
+    ],
+    "correct": 3,
+    "explanation": "The Sultan said the treasure was people's wealth and he was answerable to God.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1217,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "Passage: The demand of the queen was that the .............",
+    "options": [
+      "Sultan should earn his own livelihood.",
+      "money in the treasury should not be distributed to the poor.",
+      "Sultan should employ a maid-servant.",
+      "Sultan should help her in her household duties."
+    ],
+    "correct": 2,
+    "explanation": "The queen asked the Sultan to employ a maid-servant.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1218,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "Passage: Why was Sultan Nasiruddin popular among his people?",
+    "options": [
+      "He was devoted to the holy Koran.",
+      "He was fair to all and was full of wisdom.",
+      "He kept the treasury full of wealth.",
+      "He made his wife work like an ordinary woman."
+    ],
+    "correct": 1,
+    "explanation": "He was a wise and just ruler, kind to the poor, so everybody sang his praises.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1219,
+    "univ": "TU",
+    "subject": "English",
+    "difficulty": "Medium",
+    "question": "Passage: What forced the queen to do all the household chores?",
+    "options": [
+      "The simple life style of the Sultan.",
+      "The lack of money in the treasury.",
+      "The poor working of the maid servant.",
+      "The Sultan's greed for money."
+    ],
+    "correct": 0,
+    "explanation": "The Sultan's simple lifestyle meant the queen had to do all household work.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1220,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Hard",
+    "question": "If the slope of the line joining (1, 2) and (k, -5) is equally inclined with both the axes, what is the value of k?",
+    "options": [
+      "6",
+      "-6",
+      "3",
+      "-2"
+    ],
+    "correct": 1,
+    "explanation": "Slope = (-5 - 2)/(k - 1) = -7/(k - 1) = ±1 → k - 1 = -7 → k = -6.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1221,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "What is the value of cot 90°?",
+    "options": [
+      "3",
+      "1/2",
+      "0",
+      "1"
+    ],
+    "correct": 2,
+    "explanation": "cot 90° = cos 90°/sin 90° = 0/1 = 0.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1222,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "One card is drawn randomly from a well-shuffled pack of 52 cards. What is the probability of drawing a red queen?",
+    "options": [
+      "1/26",
+      "5/6",
+      "3/4",
+      "15/36"
+    ],
+    "correct": 0,
+    "explanation": "There are 2 red queens in 52 cards → 2/52 = 1/26.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1223,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "If A, B, C are subsets of a universal set U, then A - (B ∪ C) is equal to:",
+    "options": [
+      "(A - B) ∪ (A - C)",
+      "(A - B) ∩ (A - C)",
+      "(A ∩ B) - (A ∩ C)",
+      "(A ∪ B) - (A ∪ C)"
+    ],
+    "correct": 1,
+    "explanation": "Set difference distributes over union: A - (B ∪ C) = (A - B) ∩ (A - C).",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1224,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "Of a group of 120 students, 90 take mathematics and 72 take statistics. If 10 students take neither subject, how many students take both?",
+    "options": [
+      "50",
+      "45",
+      "52",
+      "58"
+    ],
+    "correct": 2,
+    "explanation": "Both = 90 + 72 - (120 - 10) = 162 - 110 = 52.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1225,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "-5 < x < 7 can be written in the absolute value sign as:",
+    "options": [
+      "|x - 7| < 1",
+      "|x - 1| < 6",
+      "|x - 1| < 2",
+      "|x - 1| < -1"
+    ],
+    "correct": 1,
+    "explanation": "Midpoint = (7 + (-5))/2 = 1 and half-width = 6, so |x - 1| < 6.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1226,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "If the relation R = {(1, 2), (2, 3), (3, 4), (4, 5)}, then its range is:",
+    "options": [
+      "{2, 3, 4, 5}",
+      "{1, 2, 3, 4}",
+      "{1, 2, 3, 5}",
+      "{1, 3, 4, 5}"
+    ],
+    "correct": 0,
+    "explanation": "The range is the set of second coordinates: {2, 3, 4, 5}.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1227,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "The value of tan 180° is equal to:",
+    "options": [
+      "1",
+      "-1",
+      "0",
+      "∞"
+    ],
+    "correct": 2,
+    "explanation": "tan 180° = sin 180°/cos 180° = 0/(-1) = 0.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1228,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "1² + 2² + 3² + ... + n² is equal to:",
+    "options": [
+      "n(n + 1)/2",
+      "n(n + 1)(2n + 1)/6",
+      "{n(n + 1)/2}²",
+      "None of the above"
+    ],
+    "correct": 1,
+    "explanation": "The sum of squares formula is n(n + 1)(2n + 1)/6.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1229,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "If a matrix A = [[0, -2, -6], [2, 0, -5], [6, 5, 0]], then matrix A is known as:",
+    "options": [
+      "Symmetric Matrix",
+      "Skew-Symmetric Matrix",
+      "Diagonal Matrix",
+      "Triangular Matrix"
+    ],
+    "correct": 1,
+    "explanation": "A is skew-symmetric because Aᵀ = -A (and its diagonal elements are zero).",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1230,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "The radius of the circle x² + y² = 9 is equal to:",
+    "options": [
+      "4",
+      "3",
+      "5",
+      "9"
+    ],
+    "correct": 1,
+    "explanation": "For x² + y² = r², r = √9 = 3.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1231,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "The value of 2√128 + √162 is:",
+    "options": [
+      "25√2",
+      "4√3",
+      "0",
+      "60"
+    ],
+    "correct": 0,
+    "explanation": "2√128 = 16√2 and √162 = 9√2, so the total is 25√2.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1232,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Hard",
+    "question": "If A = [[1, 3], [2, 1]], then the value of A² - 2A - 5I is equal to:",
+    "options": [
+      "1",
+      "-1",
+      "2",
+      "0"
+    ],
+    "correct": 3,
+    "explanation": "A² = [[7, 6], [4, 7]]; then A² - 2A - 5I = [[0, 0], [0, 0]] = zero matrix.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1233,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "What is the half of a quarter of 400?",
+    "options": [
+      "200",
+      "100",
+      "50",
+      "90"
+    ],
+    "correct": 2,
+    "explanation": "Quarter of 400 = 100; half of that = 50.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1234,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "Half percent, written as a decimal, is:",
+    "options": [
+      "0.2",
+      "0.02",
+      "0.005",
+      "0.05"
+    ],
+    "correct": 2,
+    "explanation": "0.5% = 0.5/100 = 0.005.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1235,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Hard",
+    "question": "The true discount on Rs. 2,562 due 4 months hence is Rs. 122. The rate percent is:",
+    "options": [
+      "12%",
+      "13%",
+      "14%",
+      "15%"
+    ],
+    "correct": 3,
+    "explanation": "P = 2562 - 122 = 2440; R = (TD × 100)/(P × T) = (122 × 100)/(2440 × 1/3) = 15%.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1236,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "The percentage increase in the area of a rectangle, if each of its sides is increased by 20%, is:",
+    "options": [
+      "40%",
+      "42%",
+      "44%",
+      "46%"
+    ],
+    "correct": 2,
+    "explanation": "New area = 1.2 × 1.2 = 1.44 times the original, i.e. a 44% increase.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1237,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "AB and CD bisect each other at O. If AD = 6 cm, BC is:",
+    "options": [
+      "5.9 cm",
+      "6 cm",
+      "4.8 cm",
+      "7 cm"
+    ],
+    "correct": 1,
+    "explanation": "The diagonals bisect each other, making ABCD a parallelogram, so BC = AD = 6 cm.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1238,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "The compound interest on Rs. 30,000 at 7% per annum is Rs. 4,347. The period (in years) is:",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "8"
+    ],
+    "correct": 0,
+    "explanation": "Amount = 34,347 = 30,000(1.07)², so n = 2 years.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1239,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Hard",
+    "question": "If a man were to sell his chair for Rs. 720, he would lose 25%. To gain 25%, he should sell it for:",
+    "options": [
+      "Rs. 1,200",
+      "Rs. 1,000",
+      "Rs. 960",
+      "Rs. 900"
+    ],
+    "correct": 0,
+    "explanation": "CP = 720/0.75 = 960; to gain 25%, SP = 960 × 1.25 = Rs. 1,200.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1240,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "Find the percentage gain or loss when dot pens bought for Rs. 96 per dozen are sold at the rate of 10 for Rs. 90.",
+    "options": [
+      "13%",
+      "20%",
+      "4%",
+      "12.5%"
+    ],
+    "correct": 3,
+    "explanation": "CP per pen = Rs. 8, SP per pen = Rs. 9; gain = 1/8 = 12.5%.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1241,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "What is the value of cos²30° - sin²30°?",
+    "options": [
+      "1/2",
+      "3/2",
+      "1/3",
+      "-1/2"
+    ],
+    "correct": 0,
+    "explanation": "3/4 - 1/4 = 1/2.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1242,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Hard",
+    "question": "How many stones, each of area 0.16 m², are required for paving a courtyard 5.5 m long and 4.8 m wide?",
+    "options": [
+      "60",
+      "100",
+      "50",
+      "165"
+    ],
+    "correct": 3,
+    "explanation": "Area = 5.5 × 4.8 = 26.4 m²; 26.4/0.16 = 165 stones.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1243,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "Which one is the formula for the area of an equilateral triangle?",
+    "options": [
+      "(√3/4)a²",
+      "(1/2) × b × h",
+      "√(s(s-a)(s-b)(s-c))",
+      "None of these"
+    ],
+    "correct": 0,
+    "explanation": "Area of an equilateral triangle of side a is (√3/4)a².",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1244,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "The commission on Rs. 5,600 at the rate of 3.5% is:",
+    "options": [
+      "Rs. 196",
+      "Rs. 440",
+      "Rs. 360",
+      "Rs. 1,000"
+    ],
+    "correct": 0,
+    "explanation": "3.5% of 5,600 = 0.035 × 5600 = Rs. 196.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1245,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "If the marked price is Rs. 5,800 and the discount amount is Rs. 696, the discount percent is:",
+    "options": [
+      "12%",
+      "20%",
+      "5%",
+      "38%"
+    ],
+    "correct": 0,
+    "explanation": "696/5800 × 100 = 12%.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1246,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "What is the tax rate if the original price is Rs. 2,000 and the selling price is Rs. 2,400?",
+    "options": [
+      "20%",
+      "17.39%",
+      "35%",
+      "10%"
+    ],
+    "correct": 0,
+    "explanation": "Tax = 400; 400/2000 × 100 = 20%.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1247,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "The sum of the ages of a father and his son is 52 years. Eight years ago the father was eight times as old as his son. The present age of the son is:",
+    "options": [
+      "10 years",
+      "20 years",
+      "12 years",
+      "15 years"
+    ],
+    "correct": 2,
+    "explanation": "Let son = s: 44 - s = 8(s - 8) → s = 12.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1248,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "If 4 is subtracted from the square of a number, the result is 21. The number is:",
+    "options": [
+      "5",
+      "4",
+      "6",
+      "3"
+    ],
+    "correct": 0,
+    "explanation": "x² - 4 = 21 → x² = 25 → x = 5.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1249,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "The radius of the circle x² + y² - 12x - 4y = 9 is equal to:",
+    "options": [
+      "18",
+      "7",
+      "10",
+      "2"
+    ],
+    "correct": 1,
+    "explanation": "Completing squares: (x - 6)² + (y - 2)² = 49, so r = 7.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1250,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "A system of linear equations will be consistent and independent if they have:",
+    "options": [
+      "exactly one solution",
+      "more than one solution",
+      "no solution",
+      "none of these"
+    ],
+    "correct": 0,
+    "explanation": "Consistent and independent systems have exactly one solution.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1251,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "Let a and b be two numbers on the real line. If (a, b] = {x : a < x ≤ b}, this is known as a:",
+    "options": [
+      "left open interval",
+      "right open interval",
+      "closed interval",
+      "open interval"
+    ],
+    "correct": 0,
+    "explanation": "(a, b] excludes a but includes b, so it is left open.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1252,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "Let f:R→R and g:R→R be defined by f(x) = 2x² - 3 and g(x) = 3x + 2. Then the composite function g∘f(x) is:",
+    "options": [
+      "9x + 8",
+      "2x + 2",
+      "2x + 1",
+      "6x² - 7"
+    ],
+    "correct": 3,
+    "explanation": "g(f(x)) = 3(2x² - 3) + 2 = 6x² - 9 + 2 = 6x² - 7.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1253,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "A square matrix A is said to be singular if its determinant is equal to:",
+    "options": [
+      "1",
+      "0",
+      "-1",
+      "none of these"
+    ],
+    "correct": 1,
+    "explanation": "A singular matrix has determinant 0.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1254,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "The system of equations 4x - 3y = -6 and -4x + 2y = 16 is:",
+    "options": [
+      "consistent and dependent",
+      "inconsistent and independent",
+      "inconsistent and dependent",
+      "consistent and independent"
+    ],
+    "correct": 3,
+    "explanation": "Determinant = 4(2) - (-3)(-4) = -4 ≠ 0, so the system has a unique solution.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1255,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "The ratio of 2 km to 600 m should be:",
+    "options": [
+      "2:7",
+      "2:8",
+      "2:3",
+      "10:3"
+    ],
+    "correct": 3,
+    "explanation": "2 km = 2000 m; 2000:600 = 10:3.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1256,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "In a : b = c : d, the terms b and c are called:",
+    "options": [
+      "antecedent",
+      "extreme",
+      "consequent",
+      "mean"
+    ],
+    "correct": 3,
+    "explanation": "In a proportion, the middle terms b and c are the means.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1257,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "If b² - 4ac < 0, then the roots of ax² + bx + c = 0 are:",
+    "options": [
+      "equal",
+      "rational",
+      "irrational",
+      "imaginary"
+    ],
+    "correct": 3,
+    "explanation": "A negative discriminant gives imaginary (complex) roots.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1258,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "A polygon having 10 sides is called:",
+    "options": [
+      "decagon",
+      "heptagon",
+      "quadrilateral",
+      "hexagon"
+    ],
+    "correct": 0,
+    "explanation": "A 10-sided polygon is a decagon.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1259,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "A linear equation is also known as a:",
+    "options": [
+      "simultaneous equation",
+      "second degree equation",
+      "first degree equation",
+      "zero degree equation"
+    ],
+    "correct": 2,
+    "explanation": "A linear equation is of the first degree.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1260,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "Two straight lines in the same plane which never meet are called:",
+    "options": [
+      "angles",
+      "transversal lines",
+      "vertex",
+      "parallel lines"
+    ],
+    "correct": 3,
+    "explanation": "Lines that never meet in the same plane are parallel.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1261,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "If x⁴ - 3x + 5 is divided by 2x - 1, then the remainder is:",
+    "options": [
+      "35/16",
+      "-35/16",
+      "-9",
+      "3"
+    ],
+    "correct": 0,
+    "explanation": "By the remainder theorem f(1/2) = (1/2)⁴ - 3(1/2) + 5 = 57/16; the model-paper key marks 35/16.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1262,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "If A, G and H are the arithmetic, geometric and harmonic means between a and b, then A, G, H:",
+    "options": [
+      "are in G.P",
+      "are in A.P",
+      "are real numbers",
+      "are in H.P"
+    ],
+    "correct": 0,
+    "explanation": "AM, GM and HM between two numbers are always in geometric progression.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1263,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "In selling an article for Rs. 76, a shopkeeper gains 52%. The gain by selling it for Rs. 74 is:",
+    "options": [
+      "45%",
+      "48%",
+      "49%",
+      "50%"
+    ],
+    "correct": 1,
+    "explanation": "CP = 76/1.52 = 50; at Rs. 74 the gain is 24/50 = 48%.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1264,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "Ram bought oranges at 6 for Rs. 10 and sold them at 4 for Rs. 6. Find his loss percent.",
+    "options": [
+      "12%",
+      "8%",
+      "6%",
+      "10%"
+    ],
+    "correct": 3,
+    "explanation": "CP per orange = 10/6, SP per orange = 6/4 = 1.5; loss = 1/6 per orange = 10%.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1265,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "Which of the following is incorrect?",
+    "options": [
+      "A.M = ab",
+      "G.M = √(ab)",
+      "H.M = 2ab/(a+b)",
+      "none of these"
+    ],
+    "correct": 0,
+    "explanation": "The arithmetic mean is (a + b)/2, not ab, so statement (a) is incorrect.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1266,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "By giving a discount of 10% on the marked price of Rs. 1,100 of a mobile phone, a dealer gains 10%. The cost price is:",
+    "options": [
+      "Rs. 950",
+      "Rs. 900",
+      "Rs. 1,000",
+      "Rs. 1,050"
+    ],
+    "correct": 1,
+    "explanation": "SP = 90% of 1,100 = 990; CP = 990/1.1 = Rs. 900.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1267,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "Rama purchased a table for Rs. 1,260 and, due to some damage, sold it for Rs. 1,197. Find the loss percent.",
+    "options": [
+      "20%",
+      "15%",
+      "10%",
+      "5%"
+    ],
+    "correct": 3,
+    "explanation": "Loss = 63; 63/1260 × 100 = 5%.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1268,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Medium",
+    "question": "A shopkeeper purchases 11 pens for Rs. 10 and sells them at the rate of 10 for Rs. 11. The profit is:",
+    "options": [
+      "18%",
+      "19%",
+      "20%",
+      "21%"
+    ],
+    "correct": 3,
+    "explanation": "CP per pen = 10/11, SP per pen = 11/10; profit = (11/10 - 10/11)/(10/11) = 21%.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1269,
+    "univ": "TU",
+    "subject": "Mathematics",
+    "difficulty": "Easy",
+    "question": "If A = [[1, 0, 0], [0, 1, 0], [0, 0, 1]], then A is a:",
+    "options": [
+      "unit matrix",
+      "singular matrix",
+      "symmetric matrix",
+      "all of them are true"
+    ],
+    "correct": 0,
+    "explanation": "A is the identity (unit) matrix; it is not singular.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1270,
+    "univ": "TU",
+    "subject": "Computer & IT",
+    "difficulty": "Easy",
+    "question": "The famous Muktinath Temple is situated in:",
+    "options": [
+      "Tanahun",
+      "Makwanpur",
+      "Mustang",
+      "Gorkha"
+    ],
+    "correct": 2,
+    "explanation": "Muktinath Temple lies in Mustang district.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1271,
+    "univ": "TU",
+    "subject": "Computer & IT",
+    "difficulty": "Easy",
+    "question": "The longest river in the world is:",
+    "options": [
+      "Nile",
+      "Ganga",
+      "Amazon",
+      "Indus"
+    ],
+    "correct": 0,
+    "explanation": "The Nile is the longest river in the world.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1272,
+    "univ": "TU",
+    "subject": "Computer & IT",
+    "difficulty": "Easy",
+    "question": "What day was yesterday, if Monday is in two days?",
+    "options": [
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "correct": 2,
+    "explanation": "If Monday is in two days, today is Saturday, so yesterday was Friday.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1273,
+    "univ": "TU",
+    "subject": "Computer & IT",
+    "difficulty": "Medium",
+    "question": "Which district lies in State Number 3 (Bagmati Province)?",
+    "options": [
+      "Helambu",
+      "Birgunj",
+      "Tanahun",
+      "Lumbini"
+    ],
+    "correct": 0,
+    "explanation": "Helambu (Sindhupalchok area) lies in Bagmati Province (State 3).",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1274,
+    "univ": "TU",
+    "subject": "Computer & IT",
+    "difficulty": "Easy",
+    "question": "Who won the FIFA World Cup 2018?",
+    "options": [
+      "Croatia",
+      "Russia",
+      "Argentina",
+      "France"
+    ],
+    "correct": 3,
+    "explanation": "France won the FIFA World Cup 2018.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1275,
+    "univ": "TU",
+    "subject": "Computer & IT",
+    "difficulty": "Easy",
+    "question": "What is the term used to ask the computer to put information in order numerically or alphabetically?",
+    "options": [
+      "Crop",
+      "Report",
+      "Sort",
+      "Record"
+    ],
+    "correct": 2,
+    "explanation": "'Sort' arranges data in numerical or alphabetical order.",
+    "source": "TU BCA Official Model Paper 2018"
+  },
+  {
+    "id": 1276,
+    "univ": "TU",
+    "subject": "Computer & IT",
+    "difficulty": "Easy",
+    "question": "How many districts are there in Nepal?",
+    "options": [
+      "75",
+      "73",
+      "77",
+      "76"
+    ],
+    "correct": 2,
+    "explanation": "Nepal currently has 77 districts.",
+    "source": "TU BCA Official Model Paper 2018"
   }
 ]

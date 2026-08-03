@@ -337,11 +337,21 @@
                                     <option value="All">All Subjects</option>
                                     <option value="Mathematics">Mathematics</option>
                                     <option value="English">English</option>
-                                    <option value="Computer & IT">Computer & IT / GK</option>
+                                    <option value="Computer & IT">Computer & IT</option>
+                                    <option value="Logical Reasoning & GK">Logical Reasoning & GK</option>
+                                </select>
+                            </div>
+                            <div class="filter-group">
+                                <label for="practiceDifficultySelect">Difficulty:</label>
+                                <select id="practiceDifficultySelect" class="form-select">
+                                    <option value="All">All Difficulties</option>
+                                    <option value="Easy">Easy</option>
+                                    <option value="Medium">Medium</option>
+                                    <option value="Hard">Hard</option>
                                 </select>
                             </div>
                             <button class="btn btn-primary" id="restartPracticeBtn">
-                                <i class="fa-solid fa-arrows-rotate"></i> Reset Quiz
+                                <i class="fa-solid fa-arrows-rotate"></i> Reshuffle Quiz
                             </button>
                         </div>
 
@@ -351,9 +361,11 @@
                                 <div class="q-meta">
                                     <span class="badge badge-univ" id="qUnivBadge">TU Pattern</span>
                                     <span class="badge badge-subject" id="qSubjectBadge">Mathematics</span>
+                                    <span class="badge badge-difficulty badge-medium" id="qDifficultyBadge">Medium</span>
+                                    <span class="badge badge-source" id="qSourceBadge" title="Source attribution"><i class="fa-solid fa-bookmark text-amber"></i> TU Entrance Pool</span>
                                 </div>
-                                <div class="q-progress-info">
-                                    <span id="qIndexText">Question 1 of 20</span>
+                                <div class="q-progress-info" style="display:none;">
+                                    <span id="qIndexText">Question 1 of 85</span>
                                 </div>
                             </div>
 
@@ -366,25 +378,35 @@
 
                                 <div class="explanation-box hidden" id="explanationBox">
                                     <div class="exp-title">
-                                        <i class="fa-solid fa-lightbulb"></i> Detailed Solution & Explanation:
+                                        <i class="fa-solid fa-lightbulb text-amber"></i> Detailed Solution & Explanation:
                                     </div>
                                     <div class="exp-content" id="explanationText"></div>
                                 </div>
                             </div>
 
                             <div class="quiz-footer">
-                                <button class="btn btn-glass" id="prevQBtn" disabled>
+                                <button class="btn btn-glass" id="prevQBtn" disabled title="Previous question (Hotkey: Left Arrow)">
                                     <i class="fa-solid fa-arrow-left"></i> Previous
                                 </button>
                                 <div class="center-actions">
+                                    <button class="btn btn-amber" id="randomQBtn" title="Jump to a random question (Hotkey: R)">
+                                        <i class="fa-solid fa-dice"></i> Random Q
+                                    </button>
                                     <button class="btn btn-outline" id="bookmarkQBtn">
                                         <i class="fa-regular fa-bookmark"></i> Bookmark
                                     </button>
                                 </div>
-                                <button class="btn btn-primary" id="nextQBtn">
+                                <button class="btn btn-primary" id="nextQBtn" title="Next question (Hotkey: Right Arrow)">
                                     Next Question <i class="fa-solid fa-arrow-right"></i>
                                 </button>
                             </div>
+                        </div>
+
+                        <div class="keyboard-hints">
+                            <span><kbd>1</kbd>-<kbd>4</kbd> or <kbd>A</kbd>-<kbd>D</kbd> Select Option</span>
+                            <span><kbd>←</kbd> Previous</span>
+                            <span><kbd>→</kbd> Next</span>
+                            <span><kbd>R</kbd> Pick Random Question</span>
                         </div>
                     </div>
                 </section>
@@ -524,14 +546,24 @@
                     <div class="qbank-controls">
                         <div class="qbank-search">
                             <i class="fa-solid fa-magnifying-glass"></i>
-                            <input type="text" id="qbankSearchInput" placeholder="Filter questions by keyword, formula, or university...">
+                            <input type="text" id="qbankSearchInput" placeholder="Filter questions by keyword, formula, difficulty, or university...">
                         </div>
                         <select id="qbankSubjectFilter" class="form-select">
                             <option value="All">All Subjects</option>
                             <option value="Mathematics">Mathematics</option>
                             <option value="English">English</option>
-                            <option value="Computer & IT">Computer Science & GK</option>
+                            <option value="Computer & IT">Computer & IT</option>
+                            <option value="Logical Reasoning & GK">Logical Reasoning & GK</option>
                         </select>
+                        <select id="qbankDifficultyFilter" class="form-select">
+                            <option value="All">All Difficulties</option>
+                            <option value="Easy">Easy</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Hard">Hard</option>
+                        </select>
+                        <button class="btn btn-outline" id="qbankShuffleBtn" title="Shuffle Question Bank view">
+                            <i class="fa-solid fa-shuffle text-indigo"></i> Shuffle
+                        </button>
                     </div>
 
                     <div class="qbank-list" id="qbankListContainer">

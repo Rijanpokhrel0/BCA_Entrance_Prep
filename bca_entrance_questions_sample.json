@@ -1,7 +1,9 @@
 [
   {
     "id": 501,
+    "univ": "TU",
     "subject": "Computer & IT",
+    "difficulty": "Easy",
     "question": "What is the primary function of an Operating System?",
     "options": [
       "Resource Management & Process Control",
@@ -10,30 +12,62 @@
       "Protecting hardware against physical damage"
     ],
     "correct": 0,
-    "explanation": "An Operating System manages computer hardware, system memory, CPU cycles, and provides services for computer programs."
+    "explanation": "An Operating System manages computer hardware, system memory, CPU cycles, and provides core services for programs.",
+    "source": "TU BCA Model Paper & OS Fundamentals"
   },
   {
     "id": 502,
+    "univ": "Purbanchal",
     "subject": "Mathematics",
+    "difficulty": "Easy",
     "question": "If sin θ = 3/5, what is the value of cos θ (assuming θ is an acute angle)?",
     "options": ["4/5", "3/4", "5/4", "5/3"],
     "correct": 0,
-    "explanation": "Using Pythagorean identity: cos θ = √(1 - sin² θ) = √(1 - 9/25) = √(16/25) = 4/5."
+    "explanation": "Using Pythagorean identity: cos θ = √(1 - sin² θ) = √(1 - 9/25) = √(16/25) = 4/5.",
+    "source": "High School Trigonometry & Purbanchal Model Pool"
   },
   {
     "id": 503,
+    "univ": "KU",
     "subject": "English",
+    "difficulty": "Easy",
     "question": "Find the synonym for 'METICULOUS':",
     "options": ["Careless", "Thorough & Precise", "Rapid", "Obsolete"],
     "correct": 1,
-    "explanation": "Meticulous means showing great attention to detail; very careful and precise."
+    "explanation": "Meticulous means showing great attention to detail; very careful and precise.",
+    "source": "KUCAT English Verbal Assessment"
   },
   {
     "id": 504,
+    "univ": "PU",
     "subject": "Computer & IT",
+    "difficulty": "Medium",
     "question": "Which layer of the OSI Model handles IP Addressing and Routing?",
     "options": ["Data Link Layer", "Network Layer", "Transport Layer", "Application Layer"],
     "correct": 1,
-    "explanation": "The Network Layer (Layer 3) handles IP addressing, packet forwarding, and routing."
+    "explanation": "The Network Layer (Layer 3) handles IP addressing, packet forwarding, and logical routing.",
+    "source": "GeeksforGeeks Networking Bank"
+  },
+  {
+    "id": 505,
+    "univ": "KU",
+    "subject": "Mathematics",
+    "difficulty": "Hard",
+    "question": "What is the derivative of f(x) = x · ln(x) with respect to x?",
+    "options": ["ln(x) + 1", "1/x", "ln(x)", "x + 1"],
+    "correct": 0,
+    "explanation": "Using Product Rule d/dx [u·v] = u'v + uv': (1)·ln(x) + x·(1/x) = ln(x) + 1.",
+    "source": "KUCAT Calculus Question Bank"
+  },
+  {
+    "id": 506,
+    "univ": "TU",
+    "subject": "Logical Reasoning & GK",
+    "difficulty": "Medium",
+    "question": "Find the next number in the series: 2, 6, 12, 20, 30, ?",
+    "options": ["36", "40", "42", "48"],
+    "correct": 2,
+    "explanation": "Pattern of differences: +4, +6, +8, +10, +12. So 30 + 12 = 42. Alternatively, n² + n for n=1..6.",
+    "source": "IndiaBIX Logical Reasoning Pool"
   }
 ]
