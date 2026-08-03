@@ -692,7 +692,7 @@ function initAdminModule() {
                 hideAdminLoginModal();
                 showToast("Admin Mode Unlocked! You can now add, edit, and manage questions.", "success");
             } else {
-                showToast("Incorrect passcode! Use default passcode 'admin123'", "error");
+                showToast("Incorrect passcode!", "error");
             }
         });
     }
