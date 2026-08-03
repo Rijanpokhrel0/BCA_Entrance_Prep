@@ -15,11 +15,14 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="light-theme">
+    <!-- Mobile Sidebar Backdrop Overlay -->
+    <div id="sidebarOverlay" class="sidebar-overlay"></div>
+
     <!-- App Container -->
     <div id="app" class="app-container">
         
         <!-- Sidebar Navigation -->
-        <aside class="sidebar">
+        <aside class="sidebar" id="sidebar">
             <div class="brand">
                 <div class="logo-icon">
                     <i class="fa-solid fa-graduation-cap"></i>
@@ -28,6 +31,9 @@
                     <h2>BCA<span>Prep</span></h2>
                     <span class="badge">Nepal 2026</span>
                 </div>
+                <button class="close-sidebar-btn" id="closeSidebarBtn" aria-label="Close menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
             </div>
 
             <nav class="nav-menu">
@@ -91,7 +97,7 @@
             <!-- Top Header -->
             <header class="top-header">
                 <div class="header-left">
-                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
                         <i class="fa-solid fa-bars"></i>
                     </button>
                     <div class="page-title-box">
@@ -106,15 +112,15 @@
                         <input type="text" id="globalSearchInput" placeholder="Search questions, TU, KU, PU...">
                     </div>
                     
-                    <button class="btn btn-primary" id="quickTestBtn">
-                        <i class="fa-solid fa-play"></i> 10-Min Quiz
+                    <button class="btn btn-primary btn-quick-test" id="quickTestBtn">
+                        <i class="fa-solid fa-play"></i> <span>10-Min Quiz</span>
                     </button>
 
                     <div class="profile-pill">
                         <div class="avatar">BCA</div>
                         <div class="user-info">
                             <span class="user-name">Nepal Aspirant</span>
-                            <span class="user-role">TU | KU | PU | Purbanchal</span>
+                            <span class="user-role">TU | KU | PU</span>
                         </div>
                     </div>
                 </div>
@@ -133,10 +139,10 @@
                             <p>Select your university exam pattern, practice past model questions, and boost your entrance rank with dedicated session mock tests.</p>
                             <div class="hero-actions">
                                 <button class="btn btn-primary btn-lg" id="dashGoUniversitiesBtn">
-                                    <i class="fa-solid fa-building-columns"></i> Explore University Sessions
+                                    <i class="fa-solid fa-building-columns"></i> University Sessions
                                 </button>
                                 <button class="btn btn-glass btn-lg" id="dashImportFileBtn">
-                                    <i class="fa-solid fa-file-import"></i> Upload Custom Question File
+                                    <i class="fa-solid fa-file-import"></i> Upload Question File
                                 </button>
                             </div>
                         </div>
@@ -164,7 +170,7 @@
                             </div>
                             <div class="stat-details">
                                 <span class="stat-value" id="totalQuestionsCount">0</span>
-                                <span class="stat-label">Total Questions in Bank</span>
+                                <span class="stat-label">Total Questions</span>
                             </div>
                         </div>
 
@@ -174,7 +180,7 @@
                             </div>
                             <div class="stat-details">
                                 <span class="stat-value" id="answeredCount">0</span>
-                                <span class="stat-label">Questions Attempted</span>
+                                <span class="stat-label">Attempted</span>
                             </div>
                         </div>
 
@@ -184,7 +190,7 @@
                             </div>
                             <div class="stat-details">
                                 <span class="stat-value" id="accuracyRate">0%</span>
-                                <span class="stat-label">Overall Accuracy</span>
+                                <span class="stat-label">Accuracy Rate</span>
                             </div>
                         </div>
 
@@ -194,7 +200,7 @@
                             </div>
                             <div class="stat-details">
                                 <span class="stat-value" id="mockExamsCompleted">0</span>
-                                <span class="stat-label">Mock Exams Completed</span>
+                                <span class="stat-label">Mock Exams</span>
                             </div>
                         </div>
                     </div>
@@ -279,7 +285,7 @@
                             </div>
                         </div>
                         <button class="btn btn-primary" id="dashGoToImportBtn">
-                            <i class="fa-solid fa-upload"></i> Import Question File
+                            <i class="fa-solid fa-upload"></i> Import File
                         </button>
                     </div>
                 </section>
@@ -292,11 +298,11 @@
                     </div>
 
                     <div class="univ-tabs">
-                        <button class="univ-tab-btn active" data-tab-univ="TU">Tribhuvan University (TU)</button>
-                        <button class="univ-tab-btn" data-tab-univ="KU">Kathmandu University (KU)</button>
-                        <button class="univ-tab-btn" data-tab-univ="PU">Pokhara University (PU)</button>
-                        <button class="univ-tab-btn" data-tab-univ="Purbanchal">Purbanchal University</button>
-                        <button class="univ-tab-btn" data-tab-univ="Others">Other Nepal & Foreign Affiliated</button>
+                        <button class="univ-tab-btn active" data-tab-univ="TU">TU (Tribhuvan)</button>
+                        <button class="univ-tab-btn" data-tab-univ="KU">KU (Kathmandu)</button>
+                        <button class="univ-tab-btn" data-tab-univ="PU">PU (Pokhara)</button>
+                        <button class="univ-tab-btn" data-tab-univ="Purbanchal">Purbanchal Univ</button>
+                        <button class="univ-tab-btn" data-tab-univ="Others">Other Nepal & Foreign</button>
                     </div>
 
                     <div class="univ-portal-content" id="univPortalContent">
@@ -412,7 +418,7 @@
                             </div>
 
                             <button class="btn btn-primary btn-xl" id="startFullMockExamBtn">
-                                <i class="fa-solid fa-play"></i> Start Selected Entrance Session
+                                <i class="fa-solid fa-play"></i> Start Entrance Session
                             </button>
                         </div>
                     </div>
@@ -650,7 +656,7 @@ Explanation: 10^2 = 100 so log10(100) = 2."></textarea>
                                     <span class="lbl">Readiness</span>
                                 </div>
                                 <div class="readiness-feedback" id="readinessFeedbackText">
-                                    Complete practice tests to generate your BCA Entrance Admission chances analysis.
+                                    Complete practice tests to generate your university admission readiness rating.
                                 </div>
                             </div>
                         </div>

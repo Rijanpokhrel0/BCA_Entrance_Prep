@@ -174,24 +174,6 @@ const defaultQuestions = [
         correct: 0,
         explanation: "By Absorption Law: A + A·B = A(1 + B) = A(1) = A."
     },
-    {
-        id: 2003,
-        univ: "KU",
-        subject: "Mathematics",
-        question: "If a matrix A has determinant |A| = 5, what is the determinant of 2A for a 3x3 matrix?",
-        options: ["10", "20", "40", "80"],
-        correct: 2,
-        explanation: "For an n x n matrix, |k A| = kⁿ |A|. Here n=3, so |2A| = 2³ · 5 = 8 · 5 = 40."
-    },
-    {
-        id: 2004,
-        univ: "KU",
-        subject: "English",
-        question: "Choose the word closest in meaning to 'EPHEMERAL':",
-        options: ["Eternal", "Transient / Short-lived", "Substantial", "Mysterious"],
-        correct: 1,
-        explanation: "Ephemeral means lasting for a very short time (transient)."
-    },
 
     // --- POKHARA UNIVERSITY (PU) QUESTIONS ---
     {
@@ -211,35 +193,6 @@ const defaultQuestions = [
         options: ["5", "5.5", "6", "10"],
         correct: 1,
         explanation: "Sum = n(n+1)/2 = 10(11)/2 = 55. Mean = 55 / 10 = 5.5."
-    },
-    {
-        id: 3003,
-        univ: "PU",
-        subject: "English",
-        question: "Pick out the correct antonym of 'OPTIMISTIC':",
-        options: ["Hopeful", "Pessimistic", "Positive", "Confident"],
-        correct: 1,
-        explanation: "Pessimistic is the exact antonym of Optimistic."
-    },
-
-    // --- PURBANCHAL UNIVERSITY QUESTIONS ---
-    {
-        id: 4001,
-        univ: "Purbanchal",
-        subject: "Computer & IT",
-        question: "What type of IP address is 192.168.1.1?",
-        options: ["Public Class A", "Private Class C", "Multicast Class D", "Loopback Address"],
-        correct: 1,
-        explanation: "192.168.x.x falls in the IPv4 Private Class C address range."
-    },
-    {
-        id: 4002,
-        univ: "Purbanchal",
-        subject: "Mathematics",
-        question: "What is the value of log₁₀(1000)?",
-        options: ["1", "2", "3", "10"],
-        correct: 2,
-        explanation: "10³ = 1000, so log₁₀(1000) = 3."
     }
 ];
 
@@ -248,8 +201,7 @@ const defaultFlashcards = [
     { category: "CS", term: "RAM vs ROM", definition: "RAM is volatile (temporary fast memory for active tasks). ROM is non-volatile (permanent firmware memory for boot-up)." },
     { category: "CS", term: "De Morgan's Laws", definition: "(A + B)' = A' · B' and (A · B)' = A' + B'. Essential for Boolean logic and digital gate simplification." },
     { category: "Math", term: "Quadratic Formula", definition: "x = [-b ± √(b² - 4ac)] / (2a). Discriminant D = b² - 4ac determines nature of roots." },
-    { category: "Math", term: "Logarithm Rules", definition: "log(ab) = log a + log b | log(a/b) = log a - log b | log(aⁿ) = n · log a." },
-    { category: "English", term: "Subject-Verb Agreement", definition: "Singular subjects take singular verbs. Phrases like 'along with', 'as well as' do not change the subject number." }
+    { category: "Math", term: "Logarithm Rules", definition: "log(ab) = log a + log b | log(a/b) = log a - log b | log(aⁿ) = n · log a." }
 ];
 
 // --- 3. UNIVERSITY DETAILS PORTAL DATA ---
@@ -326,7 +278,7 @@ let state = {
     questions: [],
     flashcards: [],
     currentView: 'dashboard',
-    theme: 'light', // LIGHT THEME DEFAULT
+    theme: 'light',
     userStats: {
         answered: 0,
         correct: 0,
@@ -432,34 +384,43 @@ function setTheme(themeName) {
     saveStateToStorage();
 }
 
-// --- 7. NAVIGATION ENGINE ---
+// --- 7. NAVIGATION & RESPONSIVE MOBILE SIDEBAR ---
 function initNavigation() {
     const navItems = document.querySelectorAll('.nav-item');
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-    const sidebar = document.querySelector('.sidebar');
+    const closeSidebarBtn = document.getElementById('closeSidebarBtn');
+    const sidebarOverlay = document.getElementById('sidebarOverlay');
+    const sidebar = document.getElementById('sidebar');
+
+    function openMobileSidebar() {
+        sidebar.classList.add('open');
+        sidebarOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeMobileSidebar() {
+        sidebar.classList.remove('open');
+        sidebarOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', openMobileSidebar);
+    if (closeSidebarBtn) closeSidebarBtn.addEventListener('click', closeMobileSidebar);
+    if (sidebarOverlay) sidebarOverlay.addEventListener('click', closeMobileSidebar);
 
     navItems.forEach(item => {
         item.addEventListener('click', () => {
             const targetView = item.getAttribute('data-view');
             switchView(targetView);
-            if (window.innerWidth <= 992) {
-                sidebar.classList.remove('open');
-            }
+            closeMobileSidebar();
         });
     });
-
-    if (mobileMenuBtn) {
-        mobileMenuBtn.addEventListener('click', () => {
-            sidebar.classList.toggle('open');
-        });
-    }
 
     document.getElementById('dashGoUniversitiesBtn')?.addEventListener('click', () => switchView('universities'));
     document.getElementById('dashImportFileBtn')?.addEventListener('click', () => switchView('import'));
     document.getElementById('dashGoToImportBtn')?.addEventListener('click', () => switchView('import'));
     document.getElementById('quickTestBtn')?.addEventListener('click', () => switchView('practice'));
 
-    // Start University Exam Buttons from Dashboard
     document.querySelectorAll('.start-univ-exam-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
             const univ = e.currentTarget.getAttribute('data-univ');
@@ -490,7 +451,7 @@ function switchView(viewName) {
     }
 
     const titles = {
-        dashboard: { title: "Dashboard", sub: "Welcome back! Select your target Nepal University entrance session." },
+        dashboard: { title: "Dashboard", sub: "Select your target Nepal University entrance session." },
         universities: { title: "University Portals", sub: "Explore official syllabus, criteria & entrance formats for TU, KU, & PU." },
         practice: { title: "Quick Practice Quiz", sub: "Sharpen your knowledge with instant subject questions & solutions." },
         mocktest: { title: "University Mock Exams", sub: "Simulate authentic timed entrance examinations." },
@@ -731,7 +692,6 @@ function startMockExam() {
     state.mock.targetUniv = targetUniv;
     state.mock.active = true;
 
-    // Filter questions for target university if specified
     if (targetUniv === 'All') {
         state.mock.questions = [...state.questions];
     } else {
@@ -741,8 +701,6 @@ function startMockExam() {
 
     state.mock.currentIndex = 0;
     state.mock.userAnswers = {};
-
-    // KU has 1.5 hr timer, others 2 hr
     state.mock.timeRemaining = (targetUniv === 'KU') ? 5400 : 7200;
 
     document.getElementById('mockWelcomeCard').classList.add('hidden');
